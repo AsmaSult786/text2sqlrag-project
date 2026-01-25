@@ -1,0 +1,1292 @@
+2026-01-24 02:58:38 - rag_app - INFO - [main.py:1260] - Storage directories initialized: data\uploads, data\cached_chunks
+2026-01-24 02:58:38 - rag_app - INFO - [main.py:1262] - ============================================================
+2026-01-24 02:58:38 - rag_app - INFO - [main.py:1262] - ============================================================
+2026-01-24 02:58:38 - rag_app - INFO - [main.py:1263] - Starting Multi-Source RAG + Text-to-SQL API...
+2026-01-24 02:58:38 - rag_app - INFO - [main.py:1264] - ============================================================
+nks
+2026-01-24 02:58:38 - rag_app - INFO - [main.py:1263] - Starting Multi-Source RAG + Text-to-SQL API...
+2026-01-24 02:58:38 - rag_app - INFO - [main.py:1262] - ======================================2026-01-24 02:58:38 - rag_app - INFO - [main.py:1264] - ============================================================
+2026-01-24 02:58:38 - rag_app - INFO - [main.py:1263] - Starting Multi-Source RAG + Text-to-SQL API...
+2026-01-24 02:58:38 - rag_app - INFO - [main.py:1265] - Phase 0: Foundation Setup - COMPLETE
+2026-01-24 02:58:38 - rag_app - INFO - [main.py:1264] - ============================================================
+2026-01-24 02:58:38 - rag_app - INFO - [main.py:1267] - Phase 2: Text-to-SQL Foundation - COMPLETE
+2026-01-24 02:58:38 - rag_app - INFO - [main.py:1266] - Phase 1: Document RAG MVP - COMPLETE
+2026-01-24 02:58:38 - rag_app - INFO - [main.py:1265] - Phase 0: Foundation Setup - COMPLETE
+2026-01-24 02:58:38 - rag_app - INFO - [main.py:1268] - Phase 3: Query Routing - COMPLETE
+2026-01-24 02:58:38 - rag_app - INFO - [main.py:1267] - Phase 2: Text-to-SQL Foundation - COMPLETE
+2026-01-24 02:58:38 - rag_app - INFO - [main.py:1266] - Phase 1: Document RAG MVP - COMPLETE
+2026-01-24 02:58:38 - rag_app - INFO - [main.py:1269] - Phase 4: Evaluation & Monitoring - COMPLETE
+2026-01-24 02:58:38 - rag_app - INFO - [main.py:1268] - Phase 3: Query Routing - COMPLETE
+2026-01-24 02:58:38 - rag_app - INFO - [main.py:1267] - Phase 2: Text-to-SQL Foundation - COMPLETE
+2026-01-24 02:58:38 - rag_app - INFO - [main.py:1270] - Phase 5: Polish & Documentation - COMPLETE
+2026-01-24 02:58:38 - rag_app - INFO - [main.py:1269] - Phase 4: Evaluation & Monitoring - COMPLETE
+2026-01-24 02:58:38 - rag_app - INFO - [main.py:1268] - Phase 3: Query Routing - COMPLETE
+2026-01-24 02:58:38 - rag_app - INFO - [main.py:1271] - Phase 6: Docker Deployment - COMPLETE
+2026-01-24 02:58:38 - rag_app - INFO - [main.py:1270] - Phase 5: Polish & Documentation - COMPLETE
+2026-01-24 02:58:38 - rag_app - INFO - [main.py:1269] - Phase 4: Evaluation & Monitoring - COMPLETE
+2026-01-24 02:58:38 - rag_app - INFO - [main.py:1272] - ============================================================
+2026-01-24 02:58:38 - rag_app - INFO - [main.py:1271] - Phase 6: Docker Deployment - COMPLETE
+2026-01-24 02:58:38 - rag_app - INFO - [main.py:1270] - Phase 5: Polish & Documentation - COMPLETE
+2026-01-24 02:58:38 - rag_app - INFO - [main.py:1273] - ALL PHASES COMPLETE - PRODUCTION READY!
+2026-01-24 02:58:38 - rag_app - INFO - [main.py:1272] - ============================================================
+2026-01-24 02:58:38 - rag_app - INFO - [main.py:1274] - ============================================================
+2026-01-24 02:58:38 - rag_app - INFO - [main.py:1273] - ALL PHASES COMPLETE - PRODUCTION READY!
+2026-01-24 02:58:38 - rag_app - INFO - [main.py:1280] - Initializing OPIK monitoring...
+2026-01-24 02:58:38 - rag_app - INFO - [main.py:1272] - ============================================================
+2026-01-24 02:58:38 - rag_app - INFO - [main.py:1274] - ============================================================
+2026-01-24 02:58:38 - rag_app - INFO - [main.py:1280] - Initializing OPIK monitoring...
+2026-01-24 02:58:38 - rag_app - INFO - [main.py:1273] - ALL PHASES COMPLETE - PRODUCTION READY!
+2026-01-24 02:58:38 - rag_app - INFO - [main.py:1274] - ============================================================
+2026-01-24 02:58:38 - rag_app - INFO - [main.py:1280] - Initializing OPIK monitoring...
+2026-01-24 02:58:39 - rag_app - WARNING - [main.py:1307] - Failed to initialize OPIK: EOF when reading a line
+2026-01-24 02:58:39 - rag_app - INFO - [main.py:1314] - Initializing query cache service (Redis)...
+2026-01-24 02:58:39 - rag_app - WARNING - [main.py:1307] - Failed to initialize OPIK: EOF when reading a line
+2026-01-24 02:58:39 - rag_app - INFO - [main.py:1314] - Initializing query cache service (Redis)...
+2026-01-24 02:58:39 - rag_app - WARNING - [main.py:1307] - Failed to initialize OPIK: EOF when reading a line
+2026-01-24 02:58:39 - rag_app - INFO - [main.py:1314] - Initializing query cache service (Redis)...
+2026-01-24 02:58:39 - rag_app - INFO - [main.py:1320] - ✓ Query cache service initialized and connected!
+2026-01-24 02:58:39 - rag_app - INFO - [main.py:1320] - ✓ Query cache service initialized and connected!
+2026-01-24 02:58:39 - rag_app - INFO - [main.py:1321] -   Cache TTL: RAG=3600s, Embeddings=604800s, SQL Gen=86400s, SQL Results=900s
+2026-01-24 02:58:39 - rag_app - INFO - [main.py:1321] -   Cache TTL: RAG=3600s, Embeddings=604800s, SQL Gen=86400s, SQL Results=900s
+2026-01-24 02:58:39 - rag_app - INFO - [main.py:1320] - ✓ Query cache service initialized and connected!
+2026-01-24 02:58:39 - rag_app - INFO - [main.py:1333] - Initializing Document RAG services...
+2026-01-24 02:58:39 - rag_app - INFO - [main.py:1321] -   Cache TTL: RAG=3600s, Embeddings=604800s, SQL Gen=86400s, SQL Results=900s
+2026-01-24 02:58:39 - rag_app - INFO - [main.py:1333] - Initializing Document RAG services...
+2026-01-24 02:58:41 - rag_app - ERROR - [main.py:1343] - Failed to initialize RAG services: Failed to connect to Pinecone index: (401)
+Reason: Unauthorized
+HTTP response headers: HTTPHeaderDict({'x-pinecone-api-version': '2025-10', 'x-cloud-trace-context': '637ef97b837e3357f30bf54454f39879', 'date': 'Sat, 24 Jan 2026 07:58:41 GMT', 'content-type': 'text/html', 'server': 'Google Frontend', 'Content-Length': '15', 'Via': '1.1 google', 'Alt-Svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000'})
+HTTP response body: Invalid API Key
+Traceback (most recent call last):
+  File "C:\Asma_2024\AI\LAB\text2sqlrag-project\app\services\vector_service.py", line 43, in connect_to_index
+    existing_indexes = self.pc.list_indexes()
+  File "C:\Asma_2024\AI\LAB\text2sqlrag-project\.venv\Lib\site-packages\pinecone\pinecone.py", line 787, in list_indexes
+    return self.db.index.list()
+           ~~~~~~~~~~~~~~~~~~^^
+  File "C:\Asma_2024\AI\LAB\text2sqlrag-project\.venv\Lib\site-packages\pinecone\utils\require_kwargs.py", line 26, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Asma_2024\AI\LAB\text2sqlrag-project\.venv\Lib\site-packages\pinecone\db_control\resources\sync\index.py", line 239, in list
+    response = self._index_api.list_indexes()
+  File "C:\Asma_2024\AI\LAB\text2sqlrag-project\.venv\Lib\site-packages\pinecone\openapi_support\endpoint.py", line 102, in __call__
+    return self.callable(self, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Asma_2024\AI\LAB\text2sqlrag-project\.venv\Lib\site-packages\pinecone\core\openapi\db_control\api\manage_indexes_api.py", line 1345, in __list_indexes
+    return cast(IndexList | ApplyResult[IndexList], self.call_with_http_info(**kwargs))
+                                                    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Asma_2024\AI\LAB\text2sqlrag-project\.venv\Lib\site-packages\pinecone\openapi_support\endpoint.py", line 134, in call_with_http_info
+    return self.api_client.call_api(
+           ~~~~~~~~~~~~~~~~~~~~~~~~^
+        self.settings["endpoint_path"],
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<16 lines>...
+        collection_formats=params["collection_format"],
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Asma_2024\AI\LAB\text2sqlrag-project\.venv\Lib\site-packages\pinecone\openapi_support\api_client.py", line 320, in call_api
+    return self.__call_api(
+           ~~~~~~~~~~~~~~~^
+        resource_path,
+        ^^^^^^^^^^^^^^
+    ...<14 lines>...
+        _check_type,
+        ^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Asma_2024\AI\LAB\text2sqlrag-project\.venv\Lib\site-packages\pinecone\openapi_support\api_client.py", line 185, in __call_api
+    raise e
+  File "C:\Asma_2024\AI\LAB\text2sqlrag-project\.venv\Lib\site-packages\pinecone\openapi_support\api_client.py", line 173, in __call_api
+    response_data = self.request(
+        method,
+    ...<6 lines>...
+        _request_timeout=_request_timeout,
+    )
+  File "C:\Asma_2024\AI\LAB\text2sqlrag-project\.venv\Lib\site-packages\pinecone\openapi_support\api_client.py", line 374, in request
+    return self.rest_client.GET(
+           ~~~~~~~~~~~~~~~~~~~~^
+        url,
+        ^^^^
+    ...<3 lines>...
+        headers=headers,
+        ^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Asma_2024\AI\LAB\text2sqlrag-project\.venv\Lib\site-packages\pinecone\openapi_support\rest_utils.py", line 75, in GET
+    return self.request(
+           ~~~~~~~~~~~~^
+        "GET",
+        ^^^^^^
+    ...<4 lines>...
+        query_params=query_params,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Asma_2024\AI\LAB\text2sqlrag-project\.venv\Lib\site-packages\pinecone\openapi_support\rest_urllib3.py", line 270, in request
+    return raise_exceptions_or_return(r)
+  File "C:\Asma_2024\AI\LAB\text2sqlrag-project\.venv\Lib\site-packages\pinecone\openapi_support\rest_utils.py", line 38, in raise_exceptions_or_return
+    raise UnauthorizedException(http_resp=r)
+pinecone.exceptions.exceptions.UnauthorizedException: (401)
+Reason: Unauthorized
+HTTP response headers: HTTPHeaderDict({'x-pinecone-api-version': '2025-10', 'x-cloud-trace-context': '637ef97b837e3357f30bf54454f39879', 'date': 'Sat, 24 Jan 2026 07:58:41 GMT', 'content-type': 'text/html', 'server': 'Google Frontend', 'Content-Length': '15', 'Via': '1.1 google', 'Alt-Svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000'})
+HTTP response body: Invalid API Key
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Asma_2024\AI\LAB\text2sqlrag-project\app\main.py", line 1336, in initialize_services
+    vector_service.connect_to_index()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Asma_2024\AI\LAB\text2sqlrag-project\app\services\vector_service.py", line 66, in connect_to_index
+    raise Exception(f"Failed to connect to Pinecone index: {str(e)}")
+Exception: Failed to connect to Pinecone index: (401)
+Reason: Unauthorized
+HTTP response headers: HTTPHeaderDict({'x-pinecone-api-version': '2025-10', 'x-cloud-trace-context': '637ef97b837e3357f30bf54454f39879', 'date': 'Sat, 24 Jan 2026 07:58:41 GMT', 'content-type': 'text/html', 'server': 'Google Frontend', 'Content-Length': '15', 'Via': '1.1 google', 'Alt-Svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000'})
+HTTP response body: Invalid API Key
+
+2026-01-24 02:58:41 - rag_app - WARNING - [main.py:1344] - Document RAG features will be unavailable.
+onnect to Pinecone index: (401)
+Reason: Unauthorized
+HTTP response headers: HTTPHeaderDict({'x-pinecone-api-version': '2025-10', 'x-cloud-trace-context': '126dc7f2c9c059a0398fb8d711dc2e03', 'date': 'Sat, 24 Jan 2026 07:58:41 GMT', 'content-type': 'text/html', 'server': 'Google Frontend', 'Content-Length': '15', 'Via': '1.1 google', 'Alt-Svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000'})
+HTTP response body: Invalid API Key
+Traceback (most recent call last):
+  File "C:\Asma_2024\AI\LAB\text2sqlrag-project\app\services\vector_service.py", line 43, in connect_to_index
+    existing_indexes = self.pc.list_indexes()
+  File "C:\Asma_2024\AI\LAB\text2sqlrag-project\.venv\Lib\site-packages\pinecone\pinecone.py", line 787, in list_indexes
+    return self.db.index.list()
+           ~~~~~~~~~~~~~~~~~~^^
+  File "C:\Asma_2024\AI\LAB\text2sqlrag-project\.venv\Lib\site-packages\pinecone\utils\require_kwargs.py", line 26, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Asma_2024\AI\LAB\text2sqlrag-project\.venv\Lib\site-packages\pinecone\db_control\resources\sync\index.py", line 239, in list
+    response = self._index_api.list_indexes()
+  File "C:\Asma_2024\AI\LAB\text2sqlrag-project\.venv\Lib\site-packages\pinecone\openapi_support\endpoint.py", line 102, in __call__
+    return self.callable(self, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Asma_2024\AI\LAB\text2sqlrag-project\.venv\Lib\site-packages\pinecone\core\openapi\db_control\api\manage_indexes_api.py", line 1345, in __list_indexes
+    return cast(IndexList | ApplyResult[IndexList], self.call_with_http_info(**kwargs))
+                                                    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Asma_2024\AI\LAB\text2sqlrag-project\.venv\Lib\site-packages\pinecone\openapi_support\endpoint.py", line 134, in call_with_http_info
+    return self.api_client.call_api(
+           ~~~~~~~~~~~~~~~~~~~~~~~~^
+        self.settings["endpoint_path"],
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<16 lines>...
+        collection_formats=params["collection_format"],
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Asma_2024\AI\LAB\text2sqlrag-project\.venv\Lib\site-packages\pinecone\openapi_support\api_client.py", line 320, in call_api
+    return self.__call_api(
+           ~~~~~~~~~~~~~~~^
+        resource_path,
+        ^^^^^^^^^^^^^^
+    ...<14 lines>...
+        _check_type,
+        ^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Asma_2024\AI\LAB\text2sqlrag-project\.venv\Lib\site-packages\pinecone\openapi_support\api_client.py", line 185, in __call_api
+    raise e
+  File "C:\Asma_2024\AI\LAB\text2sqlrag-project\.venv\Lib\site-packages\pinecone\openapi_support\api_client.py", line 173, in __call_api
+    response_data = self.request(
+        method,
+    ...<6 lines>...
+        _request_timeout=_request_timeout,
+    )
+  File "C:\Asma_2024\AI\LAB\text2sqlrag-project\.venv\Lib\site-packages\pinecone\openapi_support\api_client.py", line 374, in request
+    return self.rest_client.GET(
+           ~~~~~~~~~~~~~~~~~~~~^
+        url,
+        ^^^^
+    ...<3 lines>...
+        headers=headers,
+        ^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Asma_2024\AI\LAB\text2sqlrag-project\.venv\Lib\site-packages\pinecone\openapi_support\rest_utils.py", line 75, in GET
+    return self.request(
+           ~~~~~~~~~~~~^
+        "GET",
+        ^^^^^^
+    ...<4 lines>...
+        query_params=query_params,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Asma_2024\AI\LAB\text2sqlrag-project\.venv\Lib\site-packages\pinecone\openapi_support\rest_urllib3.py", line 270, in request
+    return raise_exceptions_or_return(r)
+  File "C:\Asma_2024\AI\LAB\text2sqlrag-project\.venv\Lib\site-packages\pinecone\openapi_support\rest_utils.py", line 38, in raise_exceptions_or_return
+    raise UnauthorizedException(http_resp=r)
+pinecone.exceptions.exceptions.UnauthorizedException: (401)
+Reason: Unauthorized
+HTTP response headers: HTTPHeaderDict({'x-pinecone-api-version': '2025-10', 'x-cloud-trace-context': '126dc7f2c9c059a0398fb8d711dc2e03', 'date': 'Sat, 24 Jan 2026 07:58:41 GMT', 'content-type': 'text/html', 'server': 'Google Frontend', 'Content-Length': '15', 'Via': '1.1 google', 'Alt-Svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000'})
+HTTP response body: Invalid API Key
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Asma_2024\AI\LAB\text2sqlrag-project\app\main.py", line 1336, in initialize_services
+    vector_service.connect_to_index()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Asma_2024\AI\LAB\text2sqlrag-project\app\services\vector_service.py", line 66, in connect_to_index
+    raise Exception(f"Failed to connect to Pinecone index: {str(e)}")
+Exception: Failed to connect to Pinecone index: (401)
+Reason: Unauthorized
+HTTP response headers: HTTPHeaderDict({'x-pinecone-api-version': '2025-10', 'x-cloud-trace-context': '126dc7f2c9c059a0398fb8d711dc2e03', 'date': 'Sat, 24 Jan 2026 07:58:41 GMT', 'content-type': 'text/html', 'server': 'Google Frontend', 'Content-Length': '15', 'Via': '1.1 google', 'Alt-Svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000'})
+HTTP response body: Invalid API Key
+
+2026-01-24 02:58:41 - rag_app - INFO - [main.py:1349] - Initializing Text-to-SQL service...
+2026-01-24 02:58:41 - rag_app - ERROR - [main.py:1343] - Failed to initialize RAG services: Failed to connect to Pinecone index: (401)
+Reason: Unauthorized
+HTTP response headers: HTTPHeaderDict({'x-pinecone-api-version': '2025-10', 'x-cloud-trace-context': '6c3771f06853e475cfc3904fc38c5d82', 'date': 'Sat, 24 Jan 2026 07:58:41 GMT', 'content-type': 'text/html', 'server': 'Google Frontend', 'Content-Length': '15', 'Via': '1.1 google', 'Alt-Svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000'})
+HTTP response body: Invalid API Key
+Traceback (most recent call last):
+  File "C:\Asma_2024\AI\LAB\text2sqlrag-project\app\services\vector_service.py", line 43, in connect_to_index
+    existing_indexes = self.pc.list_indexes()
+  File "C:\Asma_2024\AI\LAB\text2sqlrag-project\.venv\Lib\site-packages\pinecone\pinecone.py", line 787, in list_indexes
+    return self.db.index.list()
+           ~~~~~~~~~~~~~~~~~~^^
+  File "C:\Asma_2024\AI\LAB\text2sqlrag-project\.venv\Lib\site-packages\pinecone\utils\require_kwargs.py", line 26, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Asma_2024\AI\LAB\text2sqlrag-project\.venv\Lib\site-packages\pinecone\db_control\resources\sync\index.py", line 239, in list
+    response = self._index_api.list_indexes()
+  File "C:\Asma_2024\AI\LAB\text2sqlrag-project\.venv\Lib\site-packages\pinecone\openapi_support\endpoint.py", line 102, in __call__
+    return self.callable(self, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Asma_2024\AI\LAB\text2sqlrag-project\.venv\Lib\site-packages\pinecone\core\openapi\db_control\api\manage_indexes_api.py", line 1345, in __list_indexes
+    return cast(IndexList | ApplyResult[IndexList], self.call_with_http_info(**kwargs))
+                                                    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Asma_2024\AI\LAB\text2sqlrag-project\.venv\Lib\site-packages\pinecone\openapi_support\endpoint.py", line 134, in call_with_http_info
+    return self.api_client.call_api(
+           ~~~~~~~~~~~~~~~~~~~~~~~~^
+        self.settings["endpoint_path"],
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<16 lines>...
+        collection_formats=params["collection_format"],
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Asma_2024\AI\LAB\text2sqlrag-project\.venv\Lib\site-packages\pinecone\openapi_support\api_client.py", line 320, in call_api
+    return self.__call_api(
+           ~~~~~~~~~~~~~~~^
+        resource_path,
+        ^^^^^^^^^^^^^^
+    ...<14 lines>...
+        _check_type,
+        ^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Asma_2024\AI\LAB\text2sqlrag-project\.venv\Lib\site-packages\pinecone\openapi_support\api_client.py", line 185, in __call_api
+    raise e
+  File "C:\Asma_2024\AI\LAB\text2sqlrag-project\.venv\Lib\site-packages\pinecone\openapi_support\api_client.py", line 173, in __call_api
+    response_data = self.request(
+        method,
+    ...<6 lines>...
+        _request_timeout=_request_timeout,
+    )
+  File "C:\Asma_2024\AI\LAB\text2sqlrag-project\.venv\Lib\site-packages\pinecone\openapi_support\api_client.py", line 374, in request
+    return self.rest_client.GET(
+           ~~~~~~~~~~~~~~~~~~~~^
+        url,
+        ^^^^
+    ...<3 lines>...
+        headers=headers,
+        ^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Asma_2024\AI\LAB\text2sqlrag-project\.venv\Lib\site-packages\pinecone\openapi_support\rest_utils.py", line 75, in GET
+    return self.request(
+           ~~~~~~~~~~~~^
+        "GET",
+        ^^^^^^
+    ...<4 lines>...
+        query_params=query_params,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Asma_2024\AI\LAB\text2sqlrag-project\.venv\Lib\site-packages\pinecone\openapi_support\rest_urllib3.py", line 270, in request
+    return raise_exceptions_or_return(r)
+  File "C:\Asma_2024\AI\LAB\text2sqlrag-project\.venv\Lib\site-packages\pinecone\openapi_support\rest_utils.py", line 38, in raise_exceptions_or_return
+    raise UnauthorizedException(http_resp=r)
+pinecone.exceptions.exceptions.UnauthorizedException: (401)
+Reason: Unauthorized
+HTTP response headers: HTTPHeaderDict({'x-pinecone-api-version': '2025-10', 'x-cloud-trace-context': '6c3771f06853e475cfc3904fc38c5d82', 'date': 'Sat, 24 Jan 2026 07:58:41 GMT', 'content-type': 'text/html', 'server': 'Google Frontend', 'Content-Length': '15', 'Via': '1.1 google', 'Alt-Svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000'})
+HTTP response body: Invalid API Key
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Asma_2024\AI\LAB\text2sqlrag-project\app\main.py", line 1336, in initialize_services
+    vector_service.connect_to_index()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Asma_2024\AI\LAB\text2sqlrag-project\app\services\vector_service.py", line 66, in connect_to_index
+    raise Exception(f"Failed to connect to Pinecone index: {str(e)}")
+Exception: Failed to connect to Pinecone index: (401)
+Reason: Unauthorized
+HTTP response headers: HTTPHeaderDict({'x-pinecone-api-version': '2025-10', 'x-cloud-trace-context': '6c3771f06853e475cfc3904fc38c5d82', 'date': 'Sat, 24 Jan 2026 07:58:41 GMT', 'content-type': 'text/html', 'server': 'Google Frontend', 'Content-Length': '15', 'Via': '1.1 google', 'Alt-Svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000'})
+HTTP response body: Invalid API Key
+
+2026-01-24 02:58:41 - rag_app - WARNING - [main.py:1344] - Document RAG features will be unavailable.
+2026-01-24 02:58:41 - rag_app - INFO - [main.py:1349] - Initializing Text-to-SQL service...
+2026-01-24 02:58:41 - rag_app - WARNING - [main.py:1344] - Document RAG features will be unavailable.
+2026-01-24 02:58:41 - rag_app - INFO - [main.py:1349] - Initializing Text-to-SQL service...
+2026-01-24 02:58:41 - rag_app.sql_service - INFO - [sql_service.py:68] - Configuring SQL LLM with deterministic settings: temperature=0.0, top_p=0.1, seed=42
+2026-01-24 02:58:41 - rag_app.sql_service - INFO - [sql_service.py:68] - Configuring SQL LLM with deterministic settings: temperature=0.0, top_p=0.1, seed=42
+2026-01-24 02:58:41 - rag_app.sql_service - INFO - [sql_service.py:68] - Configuring SQL LLM with deterministic settings: temperature=0.0, top_p=0.1, seed=42
+2026-01-24 02:58:41 - rag_app.sql_service - INFO - [sql_service.py:115] - Using Pinecone for SQL Agent memory (index: vanna-sql-training)
+2026-01-24 02:58:41 - rag_app.sql_service - INFO - [sql_service.py:115] - Using Pinecone for SQL Agent memory (index: vanna-sql-training)
+2026-01-24 02:58:41 - rag_app.sql_service - INFO - [sql_service.py:115] - Using Pinecone for SQL Agent memory (index: vanna-sql-training)
+2026-01-24 02:58:41 - rag_app.sql_service - INFO - [sql_service.py:135] - ✓ Vanna 2.0 Agent initialized successfully
+2026-01-24 02:58:41 - rag_app - INFO - [main.py:1351] - Training Vanna on database schema and examples...
+2026-01-24 02:58:41 - rag_app - INFO - [main.py:1351] - Training Vanna on database schema and examples...
+2026-01-24 02:58:41 - rag_app.sql_service - INFO - [sql_service.py:342] - Preparing schema context for Vanna 2.0...
+2026-01-24 02:58:41 - rag_app - INFO - [main.py:1351] - Training Vanna on database schema and examples...
+a 2.0...
+2026-01-24 02:58:41 - rag_app.sql_service - INFO - [sql_service.py:348] - ✓ Schema context prepared for Vanna 2.0 Agent!
+2026-01-24 02:58:41 - rag_app.sql_service - INFO - [sql_service.py:342] - Preparing schema context for Vanna 2.0...
+2026-01-24 02:58:41 - rag_app.sql_service - INFO - [sql_service.py:348] - ✓ Schema context prepared for Vanna 2.0 Agent!
+2026-01-24 02:58:41 - rag_app - INFO - [main.py:1353] - ✓ Text-to-SQL service initialized and trained!
+2026-01-24 02:58:41 - rag_app.sql_service - INFO - [sql_service.py:348] - ✓ Schema context prepared for Vanna 2.0 Agent!
+2026-01-24 02:58:41 - rag_app - INFO - [main.py:1353] - ✓ Text-to-SQL service initialized and trained!
+2026-01-24 02:58:41 - rag_app - INFO - [main.py:1364] - Initializing document cache service (S3/local)...
+2026-01-24 02:58:41 - rag_app - INFO - [main.py:1353] - ✓ Text-to-SQL service initialized and trained!
+2026-01-24 02:58:41 - rag_app - INFO - [main.py:1364] - Initializing document cache service (S3/local)...
+2026-01-24 02:58:41 - rag_app - INFO - [main.py:1364] - Initializing document cache service (S3/local)...
+2026-01-24 02:58:41 - rag_app.cache_service - INFO - [cache_service.py:54] - Using local storage (dir: data/cached_chunks)
+2026-01-24 02:58:41 - rag_app.cache_service - INFO - [cache_service.py:54] - Using local storage (dir: data/cached_chunks)
+2026-01-24 02:58:41 - rag_app - INFO - [main.py:1366] - ✓ Document cache service initialized!
+2026-01-24 02:58:41 - rag_app - INFO - [main.py:1366] - ✓ Document cache service initialized!
+2026-01-24 02:58:41 - rag_app.cache_service - INFO - [cache_service.py:54] - Using local storage (dir: data/cached_chunks)
+2026-01-24 02:58:41 - rag_app - INFO - [main.py:1371] - ============================================================
+2026-01-24 02:58:41 - rag_app - INFO - [main.py:1371] - ============================================================
+2026-01-24 02:58:41 - rag_app - INFO - [main.py:1372] - API is ready!
+2026-01-24 02:58:41 - rag_app - INFO - [main.py:1366] - ✓ Document cache service initialized!
+2026-01-24 02:58:41 - rag_app - INFO - [main.py:1372] - API is ready!
+2026-01-24 02:58:41 - rag_app - INFO - [main.py:1373] - ============================================================
+2026-01-24 02:58:41 - rag_app - INFO - [main.py:1371] - ============================================================
+2026-01-24 02:58:41 - rag_app - INFO - [main.py:1373] - ============================================================
+2026-01-24 02:58:41 - rag_app - INFO - [main.py:1372] - API is ready!
+2026-01-24 02:58:41 - rag_app - INFO - [main.py:1373] - ============================================================
+2026-01-24 03:03:10 - rag_app - INFO - [main.py:234] - Document ID computed: 40c5b733d0e21c53a9e40fa6eb9df01bb6898b842f5f13bd42db5624c2a97dd0
+2026-01-24 03:03:10 - rag_app - INFO - [main.py:251] - Cache MISS for document: sample-local-pdf.pdf (ID: 40c5b733...)
+2026-01-24 03:03:10 - rag_app - INFO - [main.py:259] - Parsing and chunking document with context awareness: sample-local-pdf.pdf
+2026-01-24 03:03:20 - rag_app.document_service - INFO - [document_service.py:314] - Using Docling for context-aware chunking: sample-local-pdf.pdf
+2026-01-24 03:03:20 - rag_app.docling_service - INFO - [docling_service.py:45] - Converting document with Docling: sample-local-pdf.pdf
+2026-01-24 03:03:35 - rag_app.docling_service - INFO - [docling_service.py:50] - Document converted successfully: 27 text elements
+2026-01-24 03:03:35 - rag_app.docling_service - INFO - [docling_service.py:102] - Chunking with HybridChunker (max_tokens=512, merge_peers=True)
+2026-01-24 03:03:35 - rag_app.docling_service - INFO - [docling_service.py:107] - Generated 7 raw semantic chunks, merging to target 256-512 tokens
+2026-01-24 03:03:35 - rag_app.docling_service - INFO - [docling_service.py:156] - After merging: 7 chunks (avg 415.7 tokens)
+2026-01-24 03:03:35 - rag_app.docling_service - INFO - [docling_service.py:212] - Sample chunk metadata - Headings: [], Pages: []
+2026-01-24 03:03:35 - rag_app.docling_service - INFO - [docling_service.py:249] - Successfully processed sample-local-pdf.pdf: 7 chunks with context
+2026-01-24 03:03:35 - rag_app.document_service - INFO - [document_service.py:317] - Docling chunking complete: 7 chunks with heading context
+2026-01-24 03:03:35 - rag_app - INFO - [main.py:266] - Created 7 context-aware chunks (target 256-512 tokens)
+2026-01-24 03:03:35 - rag_app - INFO - [main.py:269] - Generating embeddings for 7 chunks...
+2026-01-24 03:03:38 - rag_app.cache_service - INFO - [cache_service.py:124] - Saved original document 40c5b733d0e21c53a9e40fa6eb9df01bb6898b842f5f13bd42db5624c2a97dd0.pdf
+2026-01-24 03:03:38 - rag_app - INFO - [main.py:282] - Saved original document to storage: 40c5b733d0e21c53a9e40fa6eb9df01bb6898b842f5f13bd42db5624c2a97dd0
+2026-01-24 03:03:38 - rag_app.cache_service - INFO - [cache_service.py:165] - Cached 7 chunks for 40c5b733d0e21c53a9e40fa6eb9df01bb6898b842f5f13bd42db5624c2a97dd0 (type: pdf)
+2026-01-24 03:03:38 - rag_app - INFO - [main.py:305] - Saved cache data (chunks, embeddings, metadata): 40c5b733d0e21c53a9e40fa6eb9df01bb6898b842f5f13bd42db5624c2a97dd0
+2026-01-24 03:03:38 - rag_app - INFO - [main.py:312] - Storing 7 vectors in Pinecone...
+2026-01-24 03:07:31 - rag_app - INFO - [main.py:1388] - Shutting down Multi-Source RAG + Text-to-SQL API...
+2026-01-24 03:07:31 - rag_app - INFO - [main.py:1388] - Shutting down Multi-Source RAG + Text-to-SQL API...
+2026-01-24 03:07:31 - rag_app - INFO - [main.py:1388] - Shutting down Multi-Source RAG + Text-to-SQL API...
+2026-01-24 03:08:06 - rag_app - INFO - [main.py:1260] - Storage directories initialized: data\uploads, data\cached_chunks
+2026-01-24 03:08:06 - rag_app - INFO - [main.py:1262] - ============================================================
+2026-01-24 03:08:06 - rag_app - INFO - [main.py:1263] - Starting Multi-Source RAG + Text-to-SQL API...
+2026-01-24 03:08:06 - rag_app - INFO - [main.py:1264] - ============================================================
+2026-01-24 03:08:06 - rag_app - INFO - [main.py:1265] - Phase 0: Foundation Setup - COMPLETE
+2026-01-24 03:08:06 - rag_app - INFO - [main.py:1260] - Storage directories initialized: data\uploads, data\cached_chunks
+2026-01-24 03:08:06 - rag_app - INFO - [main.py:1266] - Phase 1: Document RAG MVP - COMPLETE
+2026-01-24 03:08:06 - rag_app - INFO - [main.py:1267] - Phase 2: Text-to-SQL Foundation - COMPLETE
+2026-01-24 03:08:06 - rag_app - INFO - [main.py:1262] - ============================================================
+2026-01-24 03:08:06 - rag_app - INFO - [main.py:1268] - Phase 3: Query Routing - COMPLETE
+2026-01-24 03:08:06 - rag_app - INFO - [main.py:1263] - Starting Multi-Source RAG + Text-to-SQL API...
+2026-01-24 03:08:06 - rag_app - INFO - [main.py:1264] - ============================================================
+2026-01-24 03:08:06 - rag_app - INFO - [main.py:1265] - Phase 0: Foundation Setup - COMPLETE
+2026-01-24 03:08:06 - rag_app - INFO - [main.py:1269] - Phase 4: Evaluation & Monitoring - COMPLETE
+2026-01-24 03:08:06 - rag_app - INFO - [main.py:1266] - Phase 1: Document RAG MVP - COMPLETE
+2026-01-24 03:08:06 - rag_app - INFO - [main.py:1270] - Phase 5: Polish & Documentation - COMPLETE
+2026-01-24 03:08:06 - rag_app - INFO - [main.py:1267] - Phase 2: Text-to-SQL Foundation - COMPLETE
+2026-01-24 03:08:06 - rag_app - INFO - [main.py:1271] - Phase 6: Docker Deployment - COMPLETE
+2026-01-24 03:08:06 - rag_app - INFO - [main.py:1268] - Phase 3: Query Routing - COMPLETE
+2026-01-24 03:08:06 - rag_app - INFO - [main.py:1272] - ============================================================
+2026-01-24 03:08:06 - rag_app - INFO - [main.py:1273] - ALL PHASES COMPLETE - PRODUCTION READY!
+2026-01-24 03:08:06 - rag_app - INFO - [main.py:1269] - Phase 4: Evaluation & Monitoring - COMPLETE
+2026-01-24 03:08:06 - rag_app - INFO - [main.py:1274] - ============================================================
+2026-01-24 03:08:06 - rag_app - INFO - [main.py:1270] - Phase 5: Polish & Documentation - COMPLETE
+2026-01-24 03:08:06 - rag_app - INFO - [main.py:1271] - Phase 6: Docker Deployment - COMPLETE
+2026-01-24 03:08:06 - rag_app - INFO - [main.py:1272] - ============================================================
+2026-01-24 03:08:06 - rag_app - INFO - [main.py:1280] - Initializing OPIK monitoring...
+2026-01-24 03:08:06 - rag_app - INFO - [main.py:1273] - ALL PHASES COMPLETE - PRODUCTION READY!
+2026-01-24 03:08:06 - rag_app - INFO - [main.py:1274] - ============================================================
+2026-01-24 03:08:06 - rag_app - INFO - [main.py:1280] - Initializing OPIK monitoring...
+2026-01-24 03:08:06 - rag_app - INFO - [main.py:1260] - Storage directories initialized: data\uploads, data\cached_chunks
+2026-01-24 03:08:06 - rag_app - INFO - [main.py:1262] - ============================================================
+2026-01-24 03:08:06 - rag_app - INFO - [main.py:1263] - Starting Multi-Source RAG + Text-to-SQL API...
+2026-01-24 03:08:06 - rag_app - INFO - [main.py:1264] - ============================================================
+2026-01-24 03:08:06 - rag_app - INFO - [main.py:1265] - Phase 0: Foundation Setup - COMPLETE
+2026-01-24 03:08:06 - rag_app - INFO - [main.py:1266] - Phase 1: Document RAG MVP - COMPLETE
+2026-01-24 03:08:06 - rag_app - INFO - [main.py:1267] - Phase 2: Text-to-SQL Foundation - COMPLETE
+2026-01-24 03:08:06 - rag_app - INFO - [main.py:1268] - Phase 3: Query Routing - COMPLETE
+2026-01-24 03:08:06 - rag_app - INFO - [main.py:1269] - Phase 4: Evaluation & Monitoring - COMPLETE
+2026-01-24 03:08:06 - rag_app - INFO - [main.py:1270] - Phase 5: Polish & Documentation - COMPLETE
+2026-01-24 03:08:06 - rag_app - INFO - [main.py:1271] - Phase 6: Docker Deployment - COMPLETE
+2026-01-24 03:08:06 - rag_app - INFO - [main.py:1272] - ============================================================
+2026-01-24 03:08:06 - rag_app - INFO - [main.py:1273] - ALL PHASES COMPLETE - PRODUCTION READY!
+2026-01-24 03:08:06 - rag_app - INFO - [main.py:1274] - ============================================================
+2026-01-24 03:08:06 - rag_app - INFO - [main.py:1280] - Initializing OPIK monitoring...
+2026-01-24 03:08:07 - rag_app - WARNING - [main.py:1307] - Failed to initialize OPIK: EOF when reading a line
+2026-01-24 03:08:07 - rag_app - INFO - [main.py:1314] - Initializing query cache service (Redis)...
+2026-01-24 03:08:07 - rag_app - WARNING - [main.py:1307] - Failed to initialize OPIK: EOF when reading a line
+2026-01-24 03:08:07 - rag_app - WARNING - [main.py:1307] - Failed to initialize OPIK: EOF when reading a line
+2026-01-24 03:08:07 - rag_app - INFO - [main.py:1314] - Initializing query cache service (Redis)...
+2026-01-24 03:08:07 - rag_app - INFO - [main.py:1314] - Initializing query cache service (Redis)...
+2026-01-24 03:08:07 - rag_app - INFO - [main.py:1320] - ✓ Query cache service initialized and connected!
+2026-01-24 03:08:07 - rag_app - INFO - [main.py:1320] - ✓ Query cache service initialized and connected!
+2026-01-24 03:08:07 - rag_app - INFO - [main.py:1320] - ✓ Query cache service initialized and connected!
+2026-01-24 03:08:07 - rag_app - INFO - [main.py:1321] -   Cache TTL: RAG=3600s, Embeddings=604800s, SQL Gen=86400s, SQL Results=900s
+2026-01-24 03:08:07 - rag_app - INFO - [main.py:1321] -   Cache TTL: RAG=3600s, Embeddings=604800s, SQL Gen=86400s, SQL Results=900s
+2026-01-24 03:08:07 - rag_app - INFO - [main.py:1333] - Initializing Document RAG services...
+2026-01-24 03:08:07 - rag_app - INFO - [main.py:1333] - Initializing Document RAG services...
+2026-01-24 03:08:07 - rag_app - INFO - [main.py:1321] -   Cache TTL: RAG=3600s, Embeddings=604800s, SQL Gen=86400s, SQL Results=900s
+2026-01-24 03:08:07 - rag_app - INFO - [main.py:1333] - Initializing Document RAG services...
+2026-01-24 03:08:09 - rag_app - ERROR - [main.py:1343] - Failed to initialize RAG services: Failed to connect to Pinecone index: (401)
+Reason: Unauthorized
+HTTP response headers: HTTPHeaderDict({'x-pinecone-api-version': '2025-10', 'x-cloud-trace-context': '8a33f9babe0352d07a2317b35fc194d3', 'date': 'Sat, 24 Jan 2026 08:08:09 GMT', 'content-type': 'text/html', 'server': 'Google Frontend', 'Content-Length': '15', 'Via': '1.1 google', 'Alt-Svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000'})
+HTTP response body: Invalid API Key
+Traceback (most recent call last):
+  File "C:\Asma_2024\AI\LAB\text2sqlrag-project\app\services\vector_service.py", line 43, in connect_to_index
+    existing_indexes = self.pc.list_indexes()
+  File "C:\Asma_2024\AI\LAB\text2sqlrag-project\.venv\Lib\site-packages\pinecone\pinecone.py", line 787, in list_indexes
+    return self.db.index.list()
+           ~~~~~~~~~~~~~~~~~~^^
+  File "C:\Asma_2024\AI\LAB\text2sqlrag-project\.venv\Lib\site-packages\pinecone\utils\require_kwargs.py", line 26, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Asma_2024\AI\LAB\text2sqlrag-project\.venv\Lib\site-packages\pinecone\db_control\resources\sync\index.py", line 239, in list
+    response = self._index_api.list_indexes()
+  File "C:\Asma_2024\AI\LAB\text2sqlrag-project\.venv\Lib\site-packages\pinecone\openapi_support\endpoint.py", line 102, in __call__
+    return self.callable(self, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Asma_2024\AI\LAB\text2sqlrag-project\.venv\Lib\site-packages\pinecone\core\openapi\db_control\api\manage_indexes_api.py", line 1345, in __list_indexes
+    return cast(IndexList | ApplyResult[IndexList], self.call_with_http_info(**kwargs))
+                                                    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Asma_2024\AI\LAB\text2sqlrag-project\.venv\Lib\site-packages\pinecone\openapi_support\endpoint.py", line 134, in call_with_http_info
+    return self.api_client.call_api(
+           ~~~~~~~~~~~~~~~~~~~~~~~~^
+        self.settings["endpoint_path"],
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<16 lines>...
+        collection_formats=params["collection_format"],
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Asma_2024\AI\LAB\text2sqlrag-project\.venv\Lib\site-packages\pinecone\openapi_support\api_client.py", line 320, in call_api
+    return self.__call_api(
+           ~~~~~~~~~~~~~~~^
+        resource_path,
+        ^^^^^^^^^^^^^^
+    ...<14 lines>...
+        _check_type,
+        ^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Asma_2024\AI\LAB\text2sqlrag-project\.venv\Lib\site-packages\pinecone\openapi_support\api_client.py", line 185, in __call_api
+    raise e
+  File "C:\Asma_2024\AI\LAB\text2sqlrag-project\.venv\Lib\site-packages\pinecone\openapi_support\api_client.py", line 173, in __call_api
+    response_data = self.request(
+        method,
+    ...<6 lines>...
+        _request_timeout=_request_timeout,
+    )
+  File "C:\Asma_2024\AI\LAB\text2sqlrag-project\.venv\Lib\site-packages\pinecone\openapi_support\api_client.py", line 374, in request
+    return self.rest_client.GET(
+           ~~~~~~~~~~~~~~~~~~~~^
+        url,
+        ^^^^
+    ...<3 lines>...
+        headers=headers,
+        ^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Asma_2024\AI\LAB\text2sqlrag-project\.venv\Lib\site-packages\pinecone\openapi_support\rest_utils.py", line 75, in GET
+    return self.request(
+           ~~~~~~~~~~~~^
+        "GET",
+        ^^^^^^
+    ...<4 lines>...
+        query_params=query_params,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Asma_2024\AI\LAB\text2sqlrag-project\.venv\Lib\site-packages\pinecone\openapi_support\rest_urllib3.py", line 270, in request
+    return raise_exceptions_or_return(r)
+  File "C:\Asma_2024\AI\LAB\text2sqlrag-project\.venv\Lib\site-packages\pinecone\openapi_support\rest_utils.py", line 38, in raise_exceptions_or_return
+    raise UnauthorizedException(http_resp=r)
+pinecone.exceptions.exceptions.UnauthorizedException: (401)
+Reason: Unauthorized
+HTTP response headers: HTTPHeaderDict({'x-pinecone-api-version': '2025-10', 'x-cloud-trace-context': '8a33f9babe0352d07a2317b35fc194d3', 'date': 'Sat, 24 Jan 2026 08:08:09 GMT', 'content-type': 'text/html', 'server': 'Google Frontend', 'Content-Length': '15', 'Via': '1.1 google', 'Alt-Svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000'})
+HTTP response body: Invalid API Key
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Asma_2024\AI\LAB\text2sqlrag-project\app\main.py", line 1336, in initialize_services
+    vector_service.connect_to_index()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Asma_2024\AI\LAB\text2sqlrag-project\app\services\vector_service.py", line 66, in connect_to_index
+    raise Exception(f"Failed to connect to Pinecone index: {str(e)}")
+Exception: Failed to connect to Pinecone index: (401)
+Reason: Unauthorized
+HTTP response headers: HTTPHeaderDict({'x-pinecone-api-version': '2025-10', 'x-cloud-trace-context': '8a33f9babe0352d07a2317b35fc194d3', 'date': 'Sat, 24 Jan 2026 08:08:09 GMT', 'content-type': 'text/html', 'server': 'Google Frontend', 'Content-Length': '15', 'Via': '1.1 google', 'Alt-Svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000'})
+HTTP response body: Invalid API Key
+
+2026-01-24 03:08:09 - rag_app - ERROR - [main.py:1343] - Failed to initialize RAG services: Failed to connect to Pinecone index: (401)
+Reason: Unauthorized
+HTTP response headers: HTTPHeaderDict({'x-pinecone-api-version': '2025-10', 'x-cloud-trace-context': '12447b87405a0a2505bd381b1eb52a2f', 'date': 'Sat, 24 Jan 2026 08:08:09 GMT', 'content-type': 'text/html', 'server': 'Google Frontend', 'Content-Length': '15', 'Via': '1.1 google', 'Alt-Svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000'})
+HTTP response body: Invalid API Key
+Traceback (most recent call last):
+  File "C:\Asma_2024\AI\LAB\text2sqlrag-project\app\services\vector_service.py", line 43, in connect_to_index
+    existing_indexes = self.pc.list_indexes()
+  File "C:\Asma_2024\AI\LAB\text2sqlrag-project\.venv\Lib\site-packages\pinecone\pinecone.py", line 787, in list_indexes
+    return self.db.index.list()
+           ~~~~~~~~~~~~~~~~~~^^
+  File "C:\Asma_2024\AI\LAB\text2sqlrag-project\.venv\Lib\site-packages\pinecone\utils\require_kwargs.py", line 26, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Asma_2024\AI\LAB\text2sqlrag-project\.venv\Lib\site-packages\pinecone\db_control\resources\sync\index.py", line 239, in list
+    response = self._index_api.list_indexes()
+  File "C:\Asma_2024\AI\LAB\text2sqlrag-project\.venv\Lib\site-packages\pinecone\openapi_support\endpoint.py", line 102, in __call__
+    return self.callable(self, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Asma_2024\AI\LAB\text2sqlrag-project\.venv\Lib\site-packages\pinecone\core\openapi\db_control\api\manage_indexes_api.py", line 1345, in __list_indexes
+    return cast(IndexList | ApplyResult[IndexList], self.call_with_http_info(**kwargs))
+                                                    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Asma_2024\AI\LAB\text2sqlrag-project\.venv\Lib\site-packages\pinecone\openapi_support\endpoint.py", line 134, in call_with_http_info
+    return self.api_client.call_api(
+           ~~~~~~~~~~~~~~~~~~~~~~~~^
+        self.settings["endpoint_path"],
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<16 lines>...
+        collection_formats=params["collection_format"],
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Asma_2024\AI\LAB\text2sqlrag-project\.venv\Lib\site-packages\pinecone\openapi_support\api_client.py", line 320, in call_api
+    return self.__call_api(
+           ~~~~~~~~~~~~~~~^
+        resource_path,
+        ^^^^^^^^^^^^^^
+    ...<14 lines>...
+        _check_type,
+        ^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Asma_2024\AI\LAB\text2sqlrag-project\.venv\Lib\site-packages\pinecone\openapi_support\api_client.py", line 185, in __call_api
+    raise e
+  File "C:\Asma_2024\AI\LAB\text2sqlrag-project\.venv\Lib\site-packages\pinecone\openapi_support\api_client.py", line 173, in __call_api
+    response_data = self.request(
+        method,
+    ...<6 lines>...
+        _request_timeout=_request_timeout,
+    )
+  File "C:\Asma_2024\AI\LAB\text2sqlrag-project\.venv\Lib\site-packages\pinecone\openapi_support\api_client.py", line 374, in request
+    return self.rest_client.GET(
+           ~~~~~~~~~~~~~~~~~~~~^
+        url,
+        ^^^^
+    ...<3 lines>...
+        headers=headers,
+        ^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Asma_2024\AI\LAB\text2sqlrag-project\.venv\Lib\site-packages\pinecone\openapi_support\rest_utils.py", line 75, in GET
+    return self.request(
+           ~~~~~~~~~~~~^
+        "GET",
+        ^^^^^^
+    ...<4 lines>...
+        query_params=query_params,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Asma_2024\AI\LAB\text2sqlrag-project\.venv\Lib\site-packages\pinecone\openapi_support\rest_urllib3.py", line 270, in request
+    return raise_exceptions_or_return(r)
+  File "C:\Asma_2024\AI\LAB\text2sqlrag-project\.venv\Lib\site-packages\pinecone\openapi_support\rest_utils.py", line 38, in raise_exceptions_or_return
+    raise UnauthorizedException(http_resp=r)
+pinecone.exceptions.exceptions.UnauthorizedException: (401)
+Reason: Unauthorized
+HTTP response headers: HTTPHeaderDict({'x-pinecone-api-version': '2025-10', 'x-cloud-trace-context': '12447b87405a0a2505bd381b1eb52a2f', 'date': 'Sat, 24 Jan 2026 08:08:09 GMT', 'content-type': 'text/html', 'server': 'Google Frontend', 'Content-Length': '15', 'Via': '1.1 google', 'Alt-Svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000'})
+HTTP response body: Invalid API Key
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Asma_2024\AI\LAB\text2sqlrag-project\app\main.py", line 1336, in initialize_services
+    vector_service.connect_to_index()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Asma_2024\AI\LAB\text2sqlrag-project\app\services\vector_service.py", line 66, in connect_to_index
+    raise Exception(f"Failed to connect to Pinecone index: {str(e)}")
+Exception: Failed to connect to Pinecone index: (401)
+Reason: Unauthorized
+HTTP response headers: HTTPHeaderDict({'x-pinecone-api-version': '2025-10', 'x-cloud-trace-context': '12447b87405a0a2505bd381b1eb52a2f', 'date': 'Sat, 24 Jan 2026 08:08:09 GMT', 'content-type': 'text/html', 'server': 'Google Frontend', 'Content-Length': '15', 'Via': '1.1 google', 'Alt-Svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000'})
+HTTP response body: Invalid API Key
+
+2026-01-24 03:08:09 - rag_app - WARNING - [main.py:1344] - Document RAG features will be unavailable.
+2026-01-24 03:08:09 - rag_app - WARNING - [main.py:1344] - Document RAG features will be unavailable.
+2026-01-24 03:08:09 - rag_app - INFO - [main.py:1349] - Initializing Text-to-SQL service...
+2026-01-24 03:08:09 - rag_app - INFO - [main.py:1349] - Initializing Text-to-SQL service...
+2026-01-24 03:08:09 - rag_app - ERROR - [main.py:1343] - Failed to initialize RAG services: Failed to connect to Pinecone index: (401)
+Reason: Unauthorized
+HTTP response headers: HTTPHeaderDict({'x-pinecone-api-version': '2025-10', 'x-cloud-trace-context': 'f09ae81db58a47a8785a6371ef29530f', 'date': 'Sat, 24 Jan 2026 08:08:09 GMT', 'content-type': 'text/html', 'server': 'Google Frontend', 'Content-Length': '15', 'Via': '1.1 google', 'Alt-Svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000'})
+HTTP response body: Invalid API Key
+Traceback (most recent call last):
+  File "C:\Asma_2024\AI\LAB\text2sqlrag-project\app\services\vector_service.py", line 43, in connect_to_index
+    existing_indexes = self.pc.list_indexes()
+  File "C:\Asma_2024\AI\LAB\text2sqlrag-project\.venv\Lib\site-packages\pinecone\pinecone.py", line 787, in list_indexes
+    return self.db.index.list()
+           ~~~~~~~~~~~~~~~~~~^^
+  File "C:\Asma_2024\AI\LAB\text2sqlrag-project\.venv\Lib\site-packages\pinecone\utils\require_kwargs.py", line 26, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Asma_2024\AI\LAB\text2sqlrag-project\.venv\Lib\site-packages\pinecone\db_control\resources\sync\index.py", line 239, in list
+    response = self._index_api.list_indexes()
+  File "C:\Asma_2024\AI\LAB\text2sqlrag-project\.venv\Lib\site-packages\pinecone\openapi_support\endpoint.py", line 102, in __call__
+    return self.callable(self, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Asma_2024\AI\LAB\text2sqlrag-project\.venv\Lib\site-packages\pinecone\core\openapi\db_control\api\manage_indexes_api.py", line 1345, in __list_indexes
+    return cast(IndexList | ApplyResult[IndexList], self.call_with_http_info(**kwargs))
+                                                    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Asma_2024\AI\LAB\text2sqlrag-project\.venv\Lib\site-packages\pinecone\openapi_support\endpoint.py", line 134, in call_with_http_info
+    return self.api_client.call_api(
+           ~~~~~~~~~~~~~~~~~~~~~~~~^
+        self.settings["endpoint_path"],
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<16 lines>...
+        collection_formats=params["collection_format"],
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Asma_2024\AI\LAB\text2sqlrag-project\.venv\Lib\site-packages\pinecone\openapi_support\api_client.py", line 320, in call_api
+    return self.__call_api(
+           ~~~~~~~~~~~~~~~^
+        resource_path,
+        ^^^^^^^^^^^^^^
+    ...<14 lines>...
+        _check_type,
+        ^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Asma_2024\AI\LAB\text2sqlrag-project\.venv\Lib\site-packages\pinecone\openapi_support\api_client.py", line 185, in __call_api
+    raise e
+  File "C:\Asma_2024\AI\LAB\text2sqlrag-project\.venv\Lib\site-packages\pinecone\openapi_support\api_client.py", line 173, in __call_api
+    response_data = self.request(
+        method,
+    ...<6 lines>...
+        _request_timeout=_request_timeout,
+    )
+  File "C:\Asma_2024\AI\LAB\text2sqlrag-project\.venv\Lib\site-packages\pinecone\openapi_support\api_client.py", line 374, in request
+    return self.rest_client.GET(
+           ~~~~~~~~~~~~~~~~~~~~^
+        url,
+        ^^^^
+    ...<3 lines>...
+        headers=headers,
+        ^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Asma_2024\AI\LAB\text2sqlrag-project\.venv\Lib\site-packages\pinecone\openapi_support\rest_utils.py", line 75, in GET
+    return self.request(
+           ~~~~~~~~~~~~^
+        "GET",
+        ^^^^^^
+    ...<4 lines>...
+        query_params=query_params,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Asma_2024\AI\LAB\text2sqlrag-project\.venv\Lib\site-packages\pinecone\openapi_support\rest_urllib3.py", line 270, in request
+    return raise_exceptions_or_return(r)
+  File "C:\Asma_2024\AI\LAB\text2sqlrag-project\.venv\Lib\site-packages\pinecone\openapi_support\rest_utils.py", line 38, in raise_exceptions_or_return
+    raise UnauthorizedException(http_resp=r)
+pinecone.exceptions.exceptions.UnauthorizedException: (401)
+Reason: Unauthorized
+HTTP response headers: HTTPHeaderDict({'x-pinecone-api-version': '2025-10', 'x-cloud-trace-context': 'f09ae81db58a47a8785a6371ef29530f', 'date': 'Sat, 24 Jan 2026 08:08:09 GMT', 'content-type': 'text/html', 'server': 'Google Frontend', 'Content-Length': '15', 'Via': '1.1 google', 'Alt-Svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000'})
+HTTP response body: Invalid API Key
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Asma_2024\AI\LAB\text2sqlrag-project\app\main.py", line 1336, in initialize_services
+    vector_service.connect_to_index()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Asma_2024\AI\LAB\text2sqlrag-project\app\services\vector_service.py", line 66, in connect_to_index
+    raise Exception(f"Failed to connect to Pinecone index: {str(e)}")
+Exception: Failed to connect to Pinecone index: (401)
+Reason: Unauthorized
+HTTP response headers: HTTPHeaderDict({'x-pinecone-api-version': '2025-10', 'x-cloud-trace-context': 'f09ae81db58a47a8785a6371ef29530f', 'date': 'Sat, 24 Jan 2026 08:08:09 GMT', 'content-type': 'text/html', 'server': 'Google Frontend', 'Content-Length': '15', 'Via': '1.1 google', 'Alt-Svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000'})
+HTTP response body: Invalid API Key
+
+2026-01-24 03:08:09 - rag_app - WARNING - [main.py:1344] - Document RAG features will be unavailable.
+2026-01-24 03:08:09 - rag_app - INFO - [main.py:1349] - Initializing Text-to-SQL service...
+2026-01-24 03:08:09 - rag_app.sql_service - INFO - [sql_service.py:68] - Configuring SQL LLM with deterministic settings: temperature=0.0, top_p=0.1, seed=42
+2026-01-24 03:08:09 - rag_app.sql_service - INFO - [sql_service.py:68] - Configuring SQL LLM with deterministic settings: temperature=0.0, top_p=0.1, seed=42
+2026-01-24 03:08:09 - rag_app.sql_service - INFO - [sql_service.py:68] - Configuring SQL LLM with deterministic settings: temperature=0.0, top_p=0.1, seed=42
+2026-01-24 03:08:09 - rag_app.sql_service - INFO - [sql_service.py:115] - Using Pinecone for SQL Agent memory (index: vanna-sql-training)
+2026-01-24 03:08:09 - rag_app.sql_service - INFO - [sql_service.py:135] - ✓ Vanna 2.0 Agent initialized successfully
+2026-01-24 03:08:09 - rag_app - INFO - [main.py:1351] - Training Vanna on database schema and examples...
+2026-01-24 03:08:09 - rag_app.sql_service - INFO - [sql_service.py:342] - Preparing schema context for Vanna 2.0...
+2026-01-24 03:08:09 - rag_app.sql_service - INFO - [sql_service.py:348] - ✓ Schema context prepared for Vanna 2.0 Agent!
+2026-01-24 03:08:09 - rag_app - INFO - [main.py:1353] - ✓ Text-to-SQL service initialized and trained!
+2026-01-24 03:08:09 - rag_app - INFO - [main.py:1364] - Initializing document cache service (S3/local)...
+2026-01-24 03:08:09 - rag_app.cache_service - INFO - [cache_service.py:54] - Using local storage (dir: data/cached_chunks)
+2026-01-24 03:08:09 - rag_app - INFO - [main.py:1366] - ✓ Document cache service initialized!
+2026-01-24 03:08:09 - rag_app - INFO - [main.py:1371] - ============================================================
+2026-01-24 03:08:09 - rag_app - INFO - [main.py:1372] - API is ready!
+2026-01-24 03:08:09 - rag_app - INFO - [main.py:1373] - ============================================================
+2026-01-24 03:08:09 - rag_app.sql_service - INFO - [sql_service.py:115] - Using Pinecone for SQL Agent memory (index: vanna-sql-training)
+2026-01-24 03:08:09 - rag_app.sql_service - INFO - [sql_service.py:115] - Using Pinecone for SQL Agent memory (index: vanna-sql-training)
+2026-01-24 03:08:09 - rag_app.sql_service - INFO - [sql_service.py:135] - ✓ Vanna 2.0 Agent initialized successfully
+2026-01-24 03:08:09 - rag_app - INFO - [main.py:1351] - Training Vanna on database schema and examples...
+2026-01-24 03:08:09 - rag_app.sql_service - INFO - [sql_service.py:135] - ✓ Vanna 2.0 Agent initialized successfully
+2026-01-24 03:08:09 - rag_app.sql_service - INFO - [sql_service.py:342] - Preparing schema context for Vanna 2.0...
+2026-01-24 03:08:09 - rag_app.sql_service - INFO - [sql_service.py:348] - ✓ Schema context prepared for Vanna 2.0 Agent!
+2026-01-24 03:08:09 - rag_app - INFO - [main.py:1351] - Training Vanna on database schema and examples...
+2026-01-24 03:08:09 - rag_app.sql_service - INFO - [sql_service.py:342] - Preparing schema context for Vanna 2.0...
+2026-01-24 03:08:09 - rag_app - INFO - [main.py:1353] - ✓ Text-to-SQL service initialized and trained!
+2026-01-24 03:08:09 - rag_app.sql_service - INFO - [sql_service.py:348] - ✓ Schema context prepared for Vanna 2.0 Agent!
+2026-01-24 03:08:09 - rag_app - INFO - [main.py:1364] - Initializing document cache service (S3/local)...
+2026-01-24 03:08:09 - rag_app - INFO - [main.py:1353] - ✓ Text-to-SQL service initialized and trained!
+2026-01-24 03:08:09 - rag_app - INFO - [main.py:1364] - Initializing document cache service (S3/local)...
+2026-01-24 03:08:09 - rag_app.cache_service - INFO - [cache_service.py:54] - Using local storage (dir: data/cached_chunks)
+2026-01-24 03:08:09 - rag_app - INFO - [main.py:1366] - ✓ Document cache service initialized!
+2026-01-24 03:08:09 - rag_app.cache_service - INFO - [cache_service.py:54] - Using local storage (dir: data/cached_chunks)
+2026-01-24 03:08:09 - rag_app - INFO - [main.py:1371] - ============================================================
+2026-01-24 03:08:09 - rag_app - INFO - [main.py:1366] - ✓ Document cache service initialized!
+2026-01-24 03:08:09 - rag_app - INFO - [main.py:1372] - API is ready!
+2026-01-24 03:08:09 - rag_app - INFO - [main.py:1371] - ============================================================
+2026-01-24 03:08:09 - rag_app - INFO - [main.py:1373] - ============================================================
+2026-01-24 03:08:09 - rag_app - INFO - [main.py:1372] - API is ready!
+2026-01-24 03:08:09 - rag_app - INFO - [main.py:1373] - ============================================================
+2026-01-24 03:10:53 - rag_app - INFO - [main.py:234] - Document ID computed: bdfaa68d8984f0dc02beaca527b76f207d99b666d31d1da728ee0728182df697
+2026-01-24 03:10:53 - rag_app - INFO - [main.py:251] - Cache MISS for document: attention_paper.pdf (ID: bdfaa68d...)
+2026-01-24 03:10:53 - rag_app - INFO - [main.py:259] - Parsing and chunking document with context awareness: attention_paper.pdf
+2026-01-24 03:10:57 - rag_app.document_service - INFO - [document_service.py:314] - Using Docling for context-aware chunking: attention_paper.pdf
+2026-01-24 03:10:57 - rag_app.docling_service - INFO - [docling_service.py:45] - Converting document with Docling: attention_paper.pdf
+2026-01-24 03:11:48 - rag_app.docling_service - INFO - [docling_service.py:50] - Document converted successfully: 514 text elements
+2026-01-24 03:11:48 - rag_app.docling_service - INFO - [docling_service.py:102] - Chunking with HybridChunker (max_tokens=512, merge_peers=True)
+2026-01-24 03:11:49 - rag_app.docling_service - INFO - [docling_service.py:107] - Generated 42 raw semantic chunks, merging to target 256-512 tokens
+2026-01-24 03:11:49 - rag_app.docling_service - INFO - [docling_service.py:156] - After merging: 30 chunks (avg 380.9 tokens)
+2026-01-24 03:11:49 - rag_app.docling_service - INFO - [docling_service.py:212] - Sample chunk metadata - Headings: [], Pages: []
+2026-01-24 03:11:49 - rag_app.docling_service - INFO - [docling_service.py:249] - Successfully processed attention_paper.pdf: 30 chunks with context
+2026-01-24 03:11:49 - rag_app.document_service - INFO - [document_service.py:317] - Docling chunking complete: 30 chunks with heading context
+2026-01-24 03:11:49 - rag_app - INFO - [main.py:266] - Created 30 context-aware chunks (target 256-512 tokens)
+2026-01-24 03:11:49 - rag_app - INFO - [main.py:269] - Generating embeddings for 30 chunks...
+2026-01-24 03:11:53 - rag_app.cache_service - INFO - [cache_service.py:124] - Saved original document bdfaa68d8984f0dc02beaca527b76f207d99b666d31d1da728ee0728182df697.pdf
+2026-01-24 03:11:53 - rag_app - INFO - [main.py:282] - Saved original document to storage: bdfaa68d8984f0dc02beaca527b76f207d99b666d31d1da728ee0728182df697
+2026-01-24 03:11:53 - rag_app.cache_service - INFO - [cache_service.py:165] - Cached 30 chunks for bdfaa68d8984f0dc02beaca527b76f207d99b666d31d1da728ee0728182df697 (type: pdf)
+2026-01-24 03:11:53 - rag_app - INFO - [main.py:305] - Saved cache data (chunks, embeddings, metadata): bdfaa68d8984f0dc02beaca527b76f207d99b666d31d1da728ee0728182df697
+2026-01-24 03:11:53 - rag_app - INFO - [main.py:312] - Storing 30 vectors in Pinecone...
+2026-01-24 03:14:03 - rag_app - INFO - [main.py:234] - Document ID computed: bdfaa68d8984f0dc02beaca527b76f207d99b666d31d1da728ee0728182df697
+2026-01-24 03:14:03 - rag_app - INFO - [main.py:238] - Cache HIT for document: attention_paper.pdf (ID: bdfaa68d...)
+2026-01-24 03:14:03 - rag_app.cache_service - INFO - [cache_service.py:212] - Loaded 30 chunks from cache for bdfaa68d8984f0dc02beaca527b76f207d99b666d31d1da728ee0728182df697
+2026-01-24 03:14:03 - rag_app - INFO - [main.py:247] - Loaded 30 chunks from cache, skipping processing
+2026-01-24 03:14:03 - rag_app - INFO - [main.py:312] - Storing 30 vectors in Pinecone...
+2026-01-24 03:14:08 - rag_app - INFO - [main.py:234] - Document ID computed: bdfaa68d8984f0dc02beaca527b76f207d99b666d31d1da728ee0728182df697
+2026-01-24 03:14:08 - rag_app - INFO - [main.py:238] - Cache HIT for document: attention_paper.pdf (ID: bdfaa68d...)
+2026-01-24 03:14:08 - rag_app.cache_service - INFO - [cache_service.py:212] - Loaded 30 chunks from cache for bdfaa68d8984f0dc02beaca527b76f207d99b666d31d1da728ee0728182df697
+2026-01-24 03:14:08 - rag_app - INFO - [main.py:247] - Loaded 30 chunks from cache, skipping processing
+2026-01-24 03:14:08 - rag_app - INFO - [main.py:312] - Storing 30 vectors in Pinecone...
+2026-01-24 03:23:31 - rag_app - INFO - [main.py:1388] - Shutting down Multi-Source RAG + Text-to-SQL API...
+2026-01-24 03:23:51 - rag_app - INFO - [main.py:1260] - Storage directories initialized: data\uploads, data\cached_chunks
+2026-01-24 03:23:51 - rag_app - INFO - [main.py:1262] - ============================================================
+2026-01-24 03:23:51 - rag_app - INFO - [main.py:1263] - Starting Multi-Source RAG + Text-to-SQL API...
+2026-01-24 03:23:51 - rag_app - INFO - [main.py:1264] - ============================================================
+2026-01-24 03:23:51 - rag_app - INFO - [main.py:1265] - Phase 0: Foundation Setup - COMPLETE
+2026-01-24 03:23:51 - rag_app - INFO - [main.py:1266] - Phase 1: Document RAG MVP - COMPLETE
+2026-01-24 03:23:51 - rag_app - INFO - [main.py:1267] - Phase 2: Text-to-SQL Foundation - COMPLETE
+2026-01-24 03:23:51 - rag_app - INFO - [main.py:1268] - Phase 3: Query Routing - COMPLETE
+2026-01-24 03:23:51 - rag_app - INFO - [main.py:1269] - Phase 4: Evaluation & Monitoring - COMPLETE
+2026-01-24 03:23:51 - rag_app - INFO - [main.py:1270] - Phase 5: Polish & Documentation - COMPLETE
+2026-01-24 03:23:51 - rag_app - INFO - [main.py:1271] - Phase 6: Docker Deployment - COMPLETE
+2026-01-24 03:23:51 - rag_app - INFO - [main.py:1272] - ============================================================
+2026-01-24 03:23:51 - rag_app - INFO - [main.py:1273] - ALL PHASES COMPLETE - PRODUCTION READY!
+2026-01-24 03:23:51 - rag_app - INFO - [main.py:1274] - ============================================================
+2026-01-24 03:23:51 - rag_app - INFO - [main.py:1280] - Initializing OPIK monitoring...
+2026-01-24 03:23:51 - rag_app - WARNING - [main.py:1307] - Failed to initialize OPIK: EOF when reading a line
+2026-01-24 03:23:51 - rag_app - INFO - [main.py:1314] - Initializing query cache service (Redis)...
+2026-01-24 03:23:52 - rag_app - INFO - [main.py:1320] - ✓ Query cache service initialized and connected!
+2026-01-24 03:23:52 - rag_app - INFO - [main.py:1321] -   Cache TTL: RAG=3600s, Embeddings=604800s, SQL Gen=86400s, SQL Results=900s
+2026-01-24 03:23:52 - rag_app - INFO - [main.py:1333] - Initializing Document RAG services...
+2026-01-24 03:23:52 - rag_app.vector_service - INFO - [vector_service.py:63] - Connected to Pinecone index: rag-documents
+2026-01-24 03:23:53 - rag_app - INFO - [main.py:1338] - ✓ Document RAG services initialized!
+2026-01-24 03:23:53 - rag_app - INFO - [main.py:1349] - Initializing Text-to-SQL service...
+2026-01-24 03:23:53 - rag_app.sql_service - INFO - [sql_service.py:68] - Configuring SQL LLM with deterministic settings: temperature=0.0, top_p=0.1, seed=42
+2026-01-24 03:23:53 - rag_app.sql_service - INFO - [sql_service.py:115] - Using Pinecone for SQL Agent memory (index: vanna-sql-training)
+2026-01-24 03:23:53 - rag_app.sql_service - INFO - [sql_service.py:135] - ✓ Vanna 2.0 Agent initialized successfully
+2026-01-24 03:23:53 - rag_app - INFO - [main.py:1351] - Training Vanna on database schema and examples...
+2026-01-24 03:23:53 - rag_app.sql_service - INFO - [sql_service.py:342] - Preparing schema context for Vanna 2.0...
+2026-01-24 03:23:53 - rag_app.sql_service - INFO - [sql_service.py:348] - ✓ Schema context prepared for Vanna 2.0 Agent!
+2026-01-24 03:23:53 - rag_app - INFO - [main.py:1353] - ✓ Text-to-SQL service initialized and trained!
+2026-01-24 03:23:53 - rag_app - INFO - [main.py:1364] - Initializing document cache service (S3/local)...
+2026-01-24 03:23:53 - rag_app.cache_service - INFO - [cache_service.py:54] - Using local storage (dir: data/cached_chunks)
+2026-01-24 03:23:53 - rag_app - INFO - [main.py:1366] - ✓ Document cache service initialized!
+2026-01-24 03:23:53 - rag_app - INFO - [main.py:1371] - ============================================================
+2026-01-24 03:23:53 - rag_app - INFO - [main.py:1372] - API is ready!
+2026-01-24 03:23:53 - rag_app - INFO - [main.py:1373] - ============================================================
+2026-01-24 03:25:36 - rag_app - INFO - [main.py:234] - Document ID computed: ee2648ea4234408c462c69b400f4c60d06a18b94c3015195697d40878aa64e37
+2026-01-24 03:25:36 - rag_app - INFO - [main.py:251] - Cache MISS for document: sample1.docx (ID: ee2648ea...)
+2026-01-24 03:25:36 - rag_app - INFO - [main.py:259] - Parsing and chunking document with context awareness: sample1.docx
+2026-01-24 03:25:36 - rag_app.document_service - INFO - [document_service.py:314] - Using Docling for context-aware chunking: sample1.docx
+2026-01-24 03:25:36 - rag_app.docling_service - INFO - [docling_service.py:45] - Converting document with Docling: sample1.docx
+2026-01-24 03:25:36 - rag_app.docling_service - INFO - [docling_service.py:50] - Document converted successfully: 9 text elements
+2026-01-24 03:25:36 - rag_app.docling_service - INFO - [docling_service.py:102] - Chunking with HybridChunker (max_tokens=512, merge_peers=True)
+2026-01-24 03:25:36 - rag_app.docling_service - INFO - [docling_service.py:107] - Generated 3 raw semantic chunks, merging to target 256-512 tokens
+2026-01-24 03:25:36 - rag_app.docling_service - INFO - [docling_service.py:156] - After merging: 1 chunks (avg 49.0 tokens)
+2026-01-24 03:25:36 - rag_app.docling_service - INFO - [docling_service.py:212] - Sample chunk metadata - Headings: [], Pages: []
+2026-01-24 03:25:36 - rag_app.docling_service - INFO - [docling_service.py:249] - Successfully processed sample1.docx: 1 chunks with context
+2026-01-24 03:25:36 - rag_app.document_service - INFO - [document_service.py:317] - Docling chunking complete: 1 chunks with heading context
+2026-01-24 03:25:36 - rag_app - INFO - [main.py:266] - Created 1 context-aware chunks (target 256-512 tokens)
+2026-01-24 03:25:36 - rag_app - INFO - [main.py:269] - Generating embeddings for 1 chunks...
+2026-01-24 03:25:37 - rag_app.cache_service - INFO - [cache_service.py:124] - Saved original document ee2648ea4234408c462c69b400f4c60d06a18b94c3015195697d40878aa64e37.docx
+2026-01-24 03:25:37 - rag_app - INFO - [main.py:282] - Saved original document to storage: ee2648ea4234408c462c69b400f4c60d06a18b94c3015195697d40878aa64e37
+2026-01-24 03:25:37 - rag_app.cache_service - INFO - [cache_service.py:165] - Cached 1 chunks for ee2648ea4234408c462c69b400f4c60d06a18b94c3015195697d40878aa64e37 (type: docx)
+2026-01-24 03:25:37 - rag_app - INFO - [main.py:305] - Saved cache data (chunks, embeddings, metadata): ee2648ea4234408c462c69b400f4c60d06a18b94c3015195697d40878aa64e37
+2026-01-24 03:25:37 - rag_app - INFO - [main.py:312] - Storing 1 vectors in Pinecone...
+2026-01-24 04:08:38 - rag_app - INFO - [main.py:1388] - Shutting down Multi-Source RAG + Text-to-SQL API...
+2026-01-24 04:08:51 - rag_app - INFO - [main.py:1260] - Storage directories initialized: data\uploads, data\cached_chunks
+2026-01-24 04:08:51 - rag_app - INFO - [main.py:1262] - ============================================================
+2026-01-24 04:08:51 - rag_app - INFO - [main.py:1263] - Starting Multi-Source RAG + Text-to-SQL API...
+2026-01-24 04:08:51 - rag_app - INFO - [main.py:1264] - ============================================================
+2026-01-24 04:08:51 - rag_app - INFO - [main.py:1265] - Phase 0: Foundation Setup - COMPLETE
+2026-01-24 04:08:51 - rag_app - INFO - [main.py:1266] - Phase 1: Document RAG MVP - COMPLETE
+2026-01-24 04:08:51 - rag_app - INFO - [main.py:1267] - Phase 2: Text-to-SQL Foundation - COMPLETE
+2026-01-24 04:08:51 - rag_app - INFO - [main.py:1268] - Phase 3: Query Routing - COMPLETE
+2026-01-24 04:08:51 - rag_app - INFO - [main.py:1269] - Phase 4: Evaluation & Monitoring - COMPLETE
+2026-01-24 04:08:51 - rag_app - INFO - [main.py:1270] - Phase 5: Polish & Documentation - COMPLETE
+2026-01-24 04:08:51 - rag_app - INFO - [main.py:1271] - Phase 6: Docker Deployment - COMPLETE
+2026-01-24 04:08:51 - rag_app - INFO - [main.py:1272] - ============================================================
+2026-01-24 04:08:51 - rag_app - INFO - [main.py:1273] - ALL PHASES COMPLETE - PRODUCTION READY!
+2026-01-24 04:08:51 - rag_app - INFO - [main.py:1274] - ============================================================
+2026-01-24 04:08:51 - rag_app - INFO - [main.py:1280] - Initializing OPIK monitoring...
+2026-01-24 04:08:52 - rag_app - WARNING - [main.py:1307] - Failed to initialize OPIK: EOF when reading a line
+2026-01-24 04:08:52 - rag_app - INFO - [main.py:1314] - Initializing query cache service (Redis)...
+2026-01-24 04:08:52 - rag_app - INFO - [main.py:1320] - ✓ Query cache service initialized and connected!
+2026-01-24 04:08:52 - rag_app - INFO - [main.py:1321] -   Cache TTL: RAG=3600s, Embeddings=604800s, SQL Gen=86400s, SQL Results=900s
+2026-01-24 04:08:52 - rag_app - INFO - [main.py:1333] - Initializing Document RAG services...
+2026-01-24 04:08:53 - rag_app.vector_service - INFO - [vector_service.py:63] - Connected to Pinecone index: rag-documents
+2026-01-24 04:08:53 - rag_app - INFO - [main.py:1338] - ✓ Document RAG services initialized!
+2026-01-24 04:08:53 - rag_app - INFO - [main.py:1349] - Initializing Text-to-SQL service...
+2026-01-24 04:08:53 - rag_app.sql_service - INFO - [sql_service.py:68] - Configuring SQL LLM with deterministic settings: temperature=0.0, top_p=0.1, seed=42
+2026-01-24 04:08:53 - rag_app.sql_service - INFO - [sql_service.py:115] - Using Pinecone for SQL Agent memory (index: vanna-sql-training)
+2026-01-24 04:08:53 - rag_app.sql_service - INFO - [sql_service.py:135] - ✓ Vanna 2.0 Agent initialized successfully
+2026-01-24 04:08:53 - rag_app - INFO - [main.py:1351] - Training Vanna on database schema and examples...
+2026-01-24 04:08:53 - rag_app.sql_service - INFO - [sql_service.py:342] - Preparing schema context for Vanna 2.0...
+2026-01-24 04:08:53 - rag_app.sql_service - INFO - [sql_service.py:348] - ✓ Schema context prepared for Vanna 2.0 Agent!
+2026-01-24 04:08:53 - rag_app - INFO - [main.py:1353] - ✓ Text-to-SQL service initialized and trained!
+2026-01-24 04:08:53 - rag_app - INFO - [main.py:1364] - Initializing document cache service (S3/local)...
+2026-01-24 04:08:53 - rag_app.cache_service - INFO - [cache_service.py:54] - Using local storage (dir: data/cached_chunks)
+2026-01-24 04:08:53 - rag_app - INFO - [main.py:1366] - ✓ Document cache service initialized!
+2026-01-24 04:08:53 - rag_app - INFO - [main.py:1371] - ============================================================
+2026-01-24 04:08:53 - rag_app - INFO - [main.py:1372] - API is ready!
+2026-01-24 04:08:53 - rag_app - INFO - [main.py:1373] - ============================================================
+2026-01-24 04:09:58 - rag_app - INFO - [main.py:234] - Document ID computed: 1d58a0fac2435c2ce4129ff84906b93118d731e4a004e7a26f8ab8f749a92669
+2026-01-24 04:09:58 - rag_app - INFO - [main.py:251] - Cache MISS for document: Understanding_Climate_Change.pdf (ID: 1d58a0fa...)
+2026-01-24 04:09:58 - rag_app - INFO - [main.py:259] - Parsing and chunking document with context awareness: Understanding_Climate_Change.pdf
+2026-01-24 04:09:58 - rag_app.document_service - INFO - [document_service.py:314] - Using Docling for context-aware chunking: Understanding_Climate_Change.pdf
+2026-01-24 04:09:58 - rag_app.docling_service - INFO - [docling_service.py:45] - Converting document with Docling: Understanding_Climate_Change.pdf
+2026-01-24 04:10:36 - rag_app.docling_service - INFO - [docling_service.py:50] - Document converted successfully: 495 text elements
+2026-01-24 04:10:36 - rag_app.docling_service - INFO - [docling_service.py:102] - Chunking with HybridChunker (max_tokens=512, merge_peers=True)
+2026-01-24 04:10:36 - rag_app.docling_service - INFO - [docling_service.py:107] - Generated 209 raw semantic chunks, merging to target 256-512 tokens
+2026-01-24 04:10:36 - rag_app.docling_service - INFO - [docling_service.py:156] - After merging: 37 chunks (avg 283.6 tokens)
+2026-01-24 04:10:36 - rag_app.docling_service - INFO - [docling_service.py:212] - Sample chunk metadata - Headings: [], Pages: []
+2026-01-24 04:10:36 - rag_app.docling_service - INFO - [docling_service.py:249] - Successfully processed Understanding_Climate_Change.pdf: 37 chunks with context
+2026-01-24 04:10:36 - rag_app.document_service - INFO - [document_service.py:317] - Docling chunking complete: 37 chunks with heading context
+2026-01-24 04:10:36 - rag_app - INFO - [main.py:266] - Created 37 context-aware chunks (target 256-512 tokens)
+2026-01-24 04:10:36 - rag_app - INFO - [main.py:269] - Generating embeddings for 37 chunks...
+2026-01-24 04:10:40 - rag_app.cache_service - INFO - [cache_service.py:124] - Saved original document 1d58a0fac2435c2ce4129ff84906b93118d731e4a004e7a26f8ab8f749a92669.pdf
+2026-01-24 04:10:40 - rag_app - INFO - [main.py:282] - Saved original document to storage: 1d58a0fac2435c2ce4129ff84906b93118d731e4a004e7a26f8ab8f749a92669
+2026-01-24 04:10:40 - rag_app.cache_service - INFO - [cache_service.py:165] - Cached 37 chunks for 1d58a0fac2435c2ce4129ff84906b93118d731e4a004e7a26f8ab8f749a92669 (type: pdf)
+2026-01-24 04:10:40 - rag_app - INFO - [main.py:305] - Saved cache data (chunks, embeddings, metadata): 1d58a0fac2435c2ce4129ff84906b93118d731e4a004e7a26f8ab8f749a92669
+2026-01-24 04:10:40 - rag_app - INFO - [main.py:312] - Storing 37 vectors in Pinecone...
+2026-01-24 04:18:06 - rag_app - INFO - [main.py:234] - Document ID computed: 1d58a0fac2435c2ce4129ff84906b93118d731e4a004e7a26f8ab8f749a92669
+2026-01-24 04:18:06 - rag_app - INFO - [main.py:238] - Cache HIT for document: Understanding_Climate_Change.pdf (ID: 1d58a0fa...)
+2026-01-24 04:18:06 - rag_app.cache_service - INFO - [cache_service.py:212] - Loaded 37 chunks from cache for 1d58a0fac2435c2ce4129ff84906b93118d731e4a004e7a26f8ab8f749a92669
+2026-01-24 04:18:06 - rag_app - INFO - [main.py:247] - Loaded 37 chunks from cache, skipping processing
+2026-01-24 04:18:06 - rag_app - INFO - [main.py:312] - Storing 37 vectors in Pinecone...
+2026-01-24 04:18:11 - rag_app - INFO - [main.py:234] - Document ID computed: 1d58a0fac2435c2ce4129ff84906b93118d731e4a004e7a26f8ab8f749a92669
+2026-01-24 04:18:11 - rag_app - INFO - [main.py:238] - Cache HIT for document: Understanding_Climate_Change.pdf (ID: 1d58a0fa...)
+2026-01-24 04:18:11 - rag_app.cache_service - INFO - [cache_service.py:212] - Loaded 37 chunks from cache for 1d58a0fac2435c2ce4129ff84906b93118d731e4a004e7a26f8ab8f749a92669
+2026-01-24 04:18:11 - rag_app - INFO - [main.py:247] - Loaded 37 chunks from cache, skipping processing
+2026-01-24 04:18:11 - rag_app - INFO - [main.py:312] - Storing 37 vectors in Pinecone...
+2026-01-24 04:18:28 - rag_app - INFO - [main.py:234] - Document ID computed: 1696a51452a82270e2753863a00c725ca9af45376a6d78c243730b345cc5f75a
+2026-01-24 04:18:28 - rag_app - INFO - [main.py:251] - Cache MISS for document: Asma-RAG_accessKeys.csv (ID: 1696a514...)
+2026-01-24 04:18:28 - rag_app - INFO - [main.py:259] - Parsing and chunking document with context awareness: Asma-RAG_accessKeys.csv
+2026-01-24 04:18:28 - rag_app.document_service - INFO - [document_service.py:296] - Using fast semantic chunking for .csv file (bypassing Docling)
+2026-01-24 04:18:28 - rag_app.document_service - INFO - [document_service.py:43] - Using fast text read for .csv file
+2026-01-24 04:18:29 - rag_app.document_service - INFO - [document_service.py:208] - Semantic chunking complete: 1 chunks (semchunk)
+2026-01-24 04:18:29 - rag_app.document_service - INFO - [document_service.py:299] - Fast semantic chunking complete: 1 chunks
+2026-01-24 04:18:29 - rag_app - INFO - [main.py:266] - Created 1 context-aware chunks (target 256-512 tokens)
+2026-01-24 04:18:29 - rag_app - INFO - [main.py:269] - Generating embeddings for 1 chunks...
+2026-01-24 04:18:30 - rag_app.cache_service - INFO - [cache_service.py:124] - Saved original document 1696a51452a82270e2753863a00c725ca9af45376a6d78c243730b345cc5f75a.csv
+2026-01-24 04:18:30 - rag_app - INFO - [main.py:282] - Saved original document to storage: 1696a51452a82270e2753863a00c725ca9af45376a6d78c243730b345cc5f75a
+2026-01-24 04:18:30 - rag_app.cache_service - INFO - [cache_service.py:165] - Cached 1 chunks for 1696a51452a82270e2753863a00c725ca9af45376a6d78c243730b345cc5f75a (type: csv)
+2026-01-24 04:18:30 - rag_app - INFO - [main.py:305] - Saved cache data (chunks, embeddings, metadata): 1696a51452a82270e2753863a00c725ca9af45376a6d78c243730b345cc5f75a
+2026-01-24 04:18:30 - rag_app - INFO - [main.py:312] - Storing 1 vectors in Pinecone...
+2026-01-24 04:21:31 - rag_app - INFO - [main.py:1388] - Shutting down Multi-Source RAG + Text-to-SQL API...
+2026-01-24 04:21:31 - rag_app - INFO - [main.py:1388] - Shutting down Multi-Source RAG + Text-to-SQL API...
+2026-01-24 04:21:31 - rag_app - INFO - [main.py:1388] - Shutting down Multi-Source RAG + Text-to-SQL API...
+2026-01-24 04:21:39 - rag_app - INFO - [main.py:1260] - Storage directories initialized: data\uploads, data\cached_chunks
+2026-01-24 04:21:39 - rag_app - INFO - [main.py:1262] - ============================================================
+2026-01-24 04:21:39 - rag_app - INFO - [main.py:1263] - Starting Multi-Source RAG + Text-to-SQL API...
+2026-01-24 04:21:39 - rag_app - INFO - [main.py:1264] - ============================================================
+2026-01-24 04:21:39 - rag_app - INFO - [main.py:1265] - Phase 0: Foundation Setup - COMPLETE
+2026-01-24 04:21:39 - rag_app - INFO - [main.py:1260] - Storage directories initialized: data\uploads, data\cached_chunks
+2026-01-24 04:21:39 - rag_app - INFO - [main.py:1262] - ============================================================
+2026-01-24 04:21:39 - rag_app - INFO - [main.py:1266] - Phase 1: Document RAG MVP - COMPLETE
+2026-01-24 04:21:39 - rag_app - INFO - [main.py:1263] - Starting Multi-Source RAG + Text-to-SQL API...
+2026-01-24 04:21:39 - rag_app - INFO - [main.py:1267] - Phase 2: Text-to-SQL Foundation - COMPLETE
+2026-01-24 04:21:39 - rag_app - INFO - [main.py:1264] - ============================================================
+2026-01-24 04:21:39 - rag_app - INFO - [main.py:1265] - Phase 0: Foundation Setup - COMPLETE
+2026-01-24 04:21:39 - rag_app - INFO - [main.py:1268] - Phase 3: Query Routing - COMPLETE
+2026-01-24 04:21:39 - rag_app - INFO - [main.py:1266] - Phase 1: Document RAG MVP - COMPLETE
+2026-01-24 04:21:39 - rag_app - INFO - [main.py:1267] - Phase 2: Text-to-SQL Foundation - COMPLETE
+2026-01-24 04:21:39 - rag_app - INFO - [main.py:1269] - Phase 4: Evaluation & Monitoring - COMPLETE
+2026-01-24 04:21:39 - rag_app - INFO - [main.py:1270] - Phase 5: Polish & Documentation - COMPLETE
+2026-01-24 04:21:39 - rag_app - INFO - [main.py:1271] - Phase 6: Docker Deployment - COMPLETE
+2026-01-24 04:21:39 - rag_app - INFO - [main.py:1272] - ============================================================
+2026-01-24 04:21:39 - rag_app - INFO - [main.py:1269] - Phase 4: Evaluation & Monitoring - COMPLETE
+2026-01-24 04:21:39 - rag_app - INFO - [main.py:1273] - ALL PHASES COMPLETE - PRODUCTION READY!
+2026-01-24 04:21:39 - rag_app - INFO - [main.py:1270] - Phase 5: Polish & Documentation - COMPLETE
+2026-01-24 04:21:39 - rag_app - INFO - [main.py:1271] - Phase 6: Docker Deployment - COMPLETE
+2026-01-24 04:21:39 - rag_app - INFO - [main.py:1274] - ============================================================
+2026-01-24 04:21:39 - rag_app - INFO - [main.py:1272] - ============================================================
+2026-01-24 04:21:39 - rag_app - INFO - [main.py:1280] - Initializing OPIK monitoring...
+2026-01-24 04:21:39 - rag_app - INFO - [main.py:1273] - ALL PHASES COMPLETE - PRODUCTION READY!
+2026-01-24 04:21:39 - rag_app - INFO - [main.py:1274] - ============================================================
+2026-01-24 04:21:39 - rag_app - INFO - [main.py:1280] - Initializing OPIK monitoring...
+2026-01-24 04:21:40 - rag_app - INFO - [main.py:1260] - Storage directories initialized: data\uploads, data\cached_chunks
+2026-01-24 04:21:40 - rag_app - INFO - [main.py:1262] - ============================================================
+2026-01-24 04:21:40 - rag_app - INFO - [main.py:1263] - Starting Multi-Source RAG + Text-to-SQL API...
+2026-01-24 04:21:40 - rag_app - INFO - [main.py:1264] - ============================================================
+2026-01-24 04:21:40 - rag_app - INFO - [main.py:1265] - Phase 0: Foundation Setup - COMPLETE
+2026-01-24 04:21:40 - rag_app - INFO - [main.py:1266] - Phase 1: Document RAG MVP - COMPLETE
+2026-01-24 04:21:40 - rag_app - INFO - [main.py:1267] - Phase 2: Text-to-SQL Foundation - COMPLETE
+2026-01-24 04:21:40 - rag_app - INFO - [main.py:1268] - Phase 3: Query Routing - COMPLETE
+2026-01-24 04:21:40 - rag_app - INFO - [main.py:1269] - Phase 4: Evaluation & Monitoring - COMPLETE
+2026-01-24 04:21:40 - rag_app - INFO - [main.py:1270] - Phase 5: Polish & Documentation - COMPLETE
+2026-01-24 04:21:40 - rag_app - INFO - [main.py:1271] - Phase 6: Docker Deployment - COMPLETE
+2026-01-24 04:21:40 - rag_app - INFO - [main.py:1272] - ============================================================
+2026-01-24 04:21:40 - rag_app - INFO - [main.py:1273] - ALL PHASES COMPLETE - PRODUCTION READY!
+2026-01-24 04:21:40 - rag_app - INFO - [main.py:1274] - ============================================================
+2026-01-24 04:21:40 - rag_app - INFO - [main.py:1280] - Initializing OPIK monitoring...
+2026-01-24 04:21:40 - rag_app - WARNING - [main.py:1307] - Failed to initialize OPIK: EOF when reading a line
+2026-01-24 04:21:40 - rag_app - INFO - [main.py:1314] - Initializing query cache service (Redis)...
+2026-01-24 04:21:40 - rag_app - WARNING - [main.py:1307] - Failed to initialize OPIK: EOF when reading a line
+2026-01-24 04:21:40 - rag_app - INFO - [main.py:1314] - Initializing query cache service (Redis)...
+2026-01-24 04:21:41 - rag_app - WARNING - [main.py:1307] - Failed to initialize OPIK: EOF when reading a line
+2026-01-24 04:21:41 - rag_app - INFO - [main.py:1314] - Initializing query cache service (Redis)...
+2026-01-24 04:21:41 - rag_app - INFO - [main.py:1320] - ✓ Query cache service initialized and connected!
+2026-01-24 04:21:41 - rag_app - INFO - [main.py:1320] - ✓ Query cache service initialized and connected!
+2026-01-24 04:21:41 - rag_app - INFO - [main.py:1321] -   Cache TTL: RAG=3600s, Embeddings=604800s, SQL Gen=86400s, SQL Results=900s
+2026-01-24 04:21:41 - rag_app - INFO - [main.py:1333] - Initializing Document RAG services...
+2026-01-24 04:21:41 - rag_app - INFO - [main.py:1321] -   Cache TTL: RAG=3600s, Embeddings=604800s, SQL Gen=86400s, SQL Results=900s
+2026-01-24 04:21:41 - rag_app - INFO - [main.py:1333] - Initializing Document RAG services...
+2026-01-24 04:21:41 - rag_app - INFO - [main.py:1320] - ✓ Query cache service initialized and connected!
+2026-01-24 04:21:41 - rag_app - INFO - [main.py:1321] -   Cache TTL: RAG=3600s, Embeddings=604800s, SQL Gen=86400s, SQL Results=900s
+2026-01-24 04:21:41 - rag_app - INFO - [main.py:1333] - Initializing Document RAG services...
+2026-01-24 04:21:42 - rag_app.vector_service - INFO - [vector_service.py:63] - Connected to Pinecone index: rag-documents
+2026-01-24 04:21:42 - rag_app.vector_service - INFO - [vector_service.py:63] - Connected to Pinecone index: rag-documents
+2026-01-24 04:21:42 - rag_app.vector_service - INFO - [vector_service.py:63] - Connected to Pinecone index: rag-documents
+2026-01-24 04:21:43 - rag_app - INFO - [main.py:1338] - ✓ Document RAG services initialized!
+2026-01-24 04:21:43 - rag_app - INFO - [main.py:1349] - Initializing Text-to-SQL service...
+2026-01-24 04:21:43 - rag_app - INFO - [main.py:1338] - ✓ Document RAG services initialized!
+2026-01-24 04:21:43 - rag_app - INFO - [main.py:1349] - Initializing Text-to-SQL service...
+2026-01-24 04:21:43 - rag_app - INFO - [main.py:1338] - ✓ Document RAG services initialized!
+2026-01-24 04:21:43 - rag_app - INFO - [main.py:1349] - Initializing Text-to-SQL service...
+2026-01-24 04:21:43 - rag_app.sql_service - INFO - [sql_service.py:68] - Configuring SQL LLM with deterministic settings: temperature=0.0, top_p=0.1, seed=42
+2026-01-24 04:21:43 - rag_app.sql_service - INFO - [sql_service.py:115] - Using Pinecone for SQL Agent memory (index: vanna-sql-training)
+2026-01-24 04:21:43 - rag_app.sql_service - INFO - [sql_service.py:135] - ✓ Vanna 2.0 Agent initialized successfully
+2026-01-24 04:21:43 - rag_app - INFO - [main.py:1351] - Training Vanna on database schema and examples...
+2026-01-24 04:21:43 - rag_app.sql_service - INFO - [sql_service.py:342] - Preparing schema context for Vanna 2.0...
+2026-01-24 04:21:43 - rag_app.sql_service - INFO - [sql_service.py:348] - ✓ Schema context prepared for Vanna 2.0 Agent!
+2026-01-24 04:21:43 - rag_app - INFO - [main.py:1353] - ✓ Text-to-SQL service initialized and trained!
+2026-01-24 04:21:43 - rag_app - INFO - [main.py:1364] - Initializing document cache service (S3/local)...
+2026-01-24 04:21:43 - rag_app.cache_service - INFO - [cache_service.py:54] - Using local storage (dir: data/cached_chunks)
+2026-01-24 04:21:43 - rag_app - INFO - [main.py:1366] - ✓ Document cache service initialized!
+2026-01-24 04:21:43 - rag_app - INFO - [main.py:1371] - ============================================================
+2026-01-24 04:21:43 - rag_app - INFO - [main.py:1372] - API is ready!
+2026-01-24 04:21:43 - rag_app - INFO - [main.py:1373] - ============================================================
+2026-01-24 04:21:43 - rag_app.sql_service - INFO - [sql_service.py:68] - Configuring SQL LLM with deterministic settings: temperature=0.0, top_p=0.1, seed=42
+2026-01-24 04:21:43 - rag_app.sql_service - INFO - [sql_service.py:115] - Using Pinecone for SQL Agent memory (index: vanna-sql-training)
+2026-01-24 04:21:43 - rag_app.sql_service - INFO - [sql_service.py:135] - ✓ Vanna 2.0 Agent initialized successfully
+2026-01-24 04:21:43 - rag_app - INFO - [main.py:1351] - Training Vanna on database schema and examples...
+2026-01-24 04:21:43 - rag_app.sql_service - INFO - [sql_service.py:342] - Preparing schema context for Vanna 2.0...
+2026-01-24 04:21:43 - rag_app.sql_service - INFO - [sql_service.py:348] - ✓ Schema context prepared for Vanna 2.0 Agent!
+2026-01-24 04:21:43 - rag_app - INFO - [main.py:1353] - ✓ Text-to-SQL service initialized and trained!
+2026-01-24 04:21:43 - rag_app - INFO - [main.py:1364] - Initializing document cache service (S3/local)...
+2026-01-24 04:21:43 - rag_app.cache_service - INFO - [cache_service.py:54] - Using local storage (dir: data/cached_chunks)
+2026-01-24 04:21:43 - rag_app - INFO - [main.py:1366] - ✓ Document cache service initialized!
+2026-01-24 04:21:43 - rag_app - INFO - [main.py:1371] - ============================================================
+2026-01-24 04:21:43 - rag_app - INFO - [main.py:1372] - API is ready!
+2026-01-24 04:21:43 - rag_app - INFO - [main.py:1373] - ============================================================
+2026-01-24 04:21:43 - rag_app.sql_service - INFO - [sql_service.py:68] - Configuring SQL LLM with deterministic settings: temperature=0.0, top_p=0.1, seed=42
+2026-01-24 04:21:43 - rag_app.sql_service - INFO - [sql_service.py:115] - Using Pinecone for SQL Agent memory (index: vanna-sql-training)
+2026-01-24 04:21:43 - rag_app.sql_service - INFO - [sql_service.py:135] - ✓ Vanna 2.0 Agent initialized successfully
+2026-01-24 04:21:43 - rag_app - INFO - [main.py:1351] - Training Vanna on database schema and examples...
+2026-01-24 04:21:43 - rag_app.sql_service - INFO - [sql_service.py:342] - Preparing schema context for Vanna 2.0...
+2026-01-24 04:21:43 - rag_app.sql_service - INFO - [sql_service.py:348] - ✓ Schema context prepared for Vanna 2.0 Agent!
+2026-01-24 04:21:43 - rag_app - INFO - [main.py:1353] - ✓ Text-to-SQL service initialized and trained!
+2026-01-24 04:21:43 - rag_app - INFO - [main.py:1364] - Initializing document cache service (S3/local)...
+2026-01-24 04:21:43 - rag_app.cache_service - INFO - [cache_service.py:54] - Using local storage (dir: data/cached_chunks)
+2026-01-24 04:21:43 - rag_app - INFO - [main.py:1366] - ✓ Document cache service initialized!
+2026-01-24 04:21:43 - rag_app - INFO - [main.py:1371] - ============================================================
+2026-01-24 04:21:43 - rag_app - INFO - [main.py:1372] - API is ready!
+2026-01-24 04:21:43 - rag_app - INFO - [main.py:1373] - ============================================================
+2026-01-24 04:21:59 - rag_app - INFO - [main.py:1388] - Shutting down Multi-Source RAG + Text-to-SQL API...
+2026-01-24 04:21:59 - rag_app - INFO - [main.py:1388] - Shutting down Multi-Source RAG + Text-to-SQL API...
+2026-01-24 04:21:59 - rag_app - INFO - [main.py:1388] - Shutting down Multi-Source RAG + Text-to-SQL API...
+2026-01-24 04:22:09 - rag_app - INFO - [main.py:1260] - Storage directories initialized: data\uploads, data\cached_chunks
+2026-01-24 04:22:09 - rag_app - INFO - [main.py:1262] - ============================================================
+2026-01-24 04:22:09 - rag_app - INFO - [main.py:1263] - Starting Multi-Source RAG + Text-to-SQL API...
+2026-01-24 04:22:09 - rag_app - INFO - [main.py:1264] - ============================================================
+2026-01-24 04:22:09 - rag_app - INFO - [main.py:1265] - Phase 0: Foundation Setup - COMPLETE
+2026-01-24 04:22:09 - rag_app - INFO - [main.py:1266] - Phase 1: Document RAG MVP - COMPLETE
+2026-01-24 04:22:09 - rag_app - INFO - [main.py:1267] - Phase 2: Text-to-SQL Foundation - COMPLETE
+2026-01-24 04:22:09 - rag_app - INFO - [main.py:1268] - Phase 3: Query Routing - COMPLETE
+2026-01-24 04:22:09 - rag_app - INFO - [main.py:1269] - Phase 4: Evaluation & Monitoring - COMPLETE
+2026-01-24 04:22:09 - rag_app - INFO - [main.py:1270] - Phase 5: Polish & Documentation - COMPLETE
+2026-01-24 04:22:09 - rag_app - INFO - [main.py:1271] - Phase 6: Docker Deployment - COMPLETE
+2026-01-24 04:22:09 - rag_app - INFO - [main.py:1272] - ============================================================
+2026-01-24 04:22:09 - rag_app - INFO - [main.py:1273] - ALL PHASES COMPLETE - PRODUCTION READY!
+2026-01-24 04:22:09 - rag_app - INFO - [main.py:1274] - ============================================================
+2026-01-24 04:22:09 - rag_app - INFO - [main.py:1280] - Initializing OPIK monitoring...
+2026-01-24 04:22:09 - rag_app - INFO - [main.py:1260] - Storage directories initialized: data\uploads, data\cached_chunks
+2026-01-24 04:22:09 - rag_app - INFO - [main.py:1262] - ============================================================
+2026-01-24 04:22:09 - rag_app - INFO - [main.py:1263] - Starting Multi-Source RAG + Text-to-SQL API...
+2026-01-24 04:22:09 - rag_app - INFO - [main.py:1264] - ============================================================
+2026-01-24 04:22:09 - rag_app - INFO - [main.py:1265] - Phase 0: Foundation Setup - COMPLETE
+2026-01-24 04:22:09 - rag_app - INFO - [main.py:1266] - Phase 1: Document RAG MVP - COMPLETE
+2026-01-24 04:22:09 - rag_app - INFO - [main.py:1267] - Phase 2: Text-to-SQL Foundation - COMPLETE
+2026-01-24 04:22:09 - rag_app - INFO - [main.py:1268] - Phase 3: Query Routing - COMPLETE
+2026-01-24 04:22:09 - rag_app - INFO - [main.py:1269] - Phase 4: Evaluation & Monitoring - COMPLETE
+2026-01-24 04:22:09 - rag_app - INFO - [main.py:1270] - Phase 5: Polish & Documentation - COMPLETE
+2026-01-24 04:22:09 - rag_app - INFO - [main.py:1271] - Phase 6: Docker Deployment - COMPLETE
+2026-01-24 04:22:09 - rag_app - INFO - [main.py:1272] - ============================================================
+2026-01-24 04:22:09 - rag_app - INFO - [main.py:1273] - ALL PHASES COMPLETE - PRODUCTION READY!
+2026-01-24 04:22:09 - rag_app - INFO - [main.py:1274] - ============================================================
+2026-01-24 04:22:09 - rag_app - INFO - [main.py:1280] - Initializing OPIK monitoring...
+2026-01-24 04:22:09 - rag_app - INFO - [main.py:1260] - Storage directories initialized: data\uploads, data\cached_chunks
+2026-01-24 04:22:09 - rag_app - INFO - [main.py:1262] - ============================================================
+2026-01-24 04:22:09 - rag_app - INFO - [main.py:1263] - Starting Multi-Source RAG + Text-to-SQL API...
+2026-01-24 04:22:09 - rag_app - INFO - [main.py:1264] - ============================================================
+2026-01-24 04:22:09 - rag_app - INFO - [main.py:1265] - Phase 0: Foundation Setup - COMPLETE
+2026-01-24 04:22:09 - rag_app - INFO - [main.py:1266] - Phase 1: Document RAG MVP - COMPLETE
+2026-01-24 04:22:09 - rag_app - INFO - [main.py:1267] - Phase 2: Text-to-SQL Foundation - COMPLETE
+2026-01-24 04:22:09 - rag_app - INFO - [main.py:1268] - Phase 3: Query Routing - COMPLETE
+2026-01-24 04:22:09 - rag_app - INFO - [main.py:1269] - Phase 4: Evaluation & Monitoring - COMPLETE
+2026-01-24 04:22:09 - rag_app - INFO - [main.py:1270] - Phase 5: Polish & Documentation - COMPLETE
+2026-01-24 04:22:09 - rag_app - INFO - [main.py:1271] - Phase 6: Docker Deployment - COMPLETE
+2026-01-24 04:22:09 - rag_app - INFO - [main.py:1272] - ============================================================
+2026-01-24 04:22:09 - rag_app - INFO - [main.py:1273] - ALL PHASES COMPLETE - PRODUCTION READY!
+2026-01-24 04:22:09 - rag_app - INFO - [main.py:1274] - ============================================================
+2026-01-24 04:22:09 - rag_app - INFO - [main.py:1280] - Initializing OPIK monitoring...
+2026-01-24 04:22:10 - rag_app - WARNING - [main.py:1307] - Failed to initialize OPIK: EOF when reading a line
+2026-01-24 04:22:10 - rag_app - INFO - [main.py:1314] - Initializing query cache service (Redis)...
+2026-01-24 04:22:10 - rag_app - WARNING - [main.py:1307] - Failed to initialize OPIK: EOF when reading a line
+2026-01-24 04:22:10 - rag_app - INFO - [main.py:1314] - Initializing query cache service (Redis)...
+2026-01-24 04:22:10 - rag_app - WARNING - [main.py:1307] - Failed to initialize OPIK: EOF when reading a line
+2026-01-24 04:22:10 - rag_app - INFO - [main.py:1314] - Initializing query cache service (Redis)...
+2026-01-24 04:22:11 - rag_app - INFO - [main.py:1320] - ✓ Query cache service initialized and connected!
+2026-01-24 04:22:11 - rag_app - INFO - [main.py:1321] -   Cache TTL: RAG=3600s, Embeddings=604800s, SQL Gen=86400s, SQL Results=900s
+2026-01-24 04:22:11 - rag_app - INFO - [main.py:1333] - Initializing Document RAG services...
+2026-01-24 04:22:11 - rag_app - INFO - [main.py:1320] - ✓ Query cache service initialized and connected!
+2026-01-24 04:22:11 - rag_app - INFO - [main.py:1321] -   Cache TTL: RAG=3600s, Embeddings=604800s, SQL Gen=86400s, SQL Results=900s
+2026-01-24 04:22:11 - rag_app - INFO - [main.py:1333] - Initializing Document RAG services...
+2026-01-24 04:22:11 - rag_app - INFO - [main.py:1320] - ✓ Query cache service initialized and connected!
+2026-01-24 04:22:11 - rag_app - INFO - [main.py:1321] -   Cache TTL: RAG=3600s, Embeddings=604800s, SQL Gen=86400s, SQL Results=900s
+2026-01-24 04:22:11 - rag_app - INFO - [main.py:1333] - Initializing Document RAG services...
+2026-01-24 04:22:12 - rag_app.vector_service - INFO - [vector_service.py:63] - Connected to Pinecone index: rag-documents
+2026-01-24 04:22:12 - rag_app.vector_service - INFO - [vector_service.py:63] - Connected to Pinecone index: rag-documents
+2026-01-24 04:22:12 - rag_app.vector_service - INFO - [vector_service.py:63] - Connected to Pinecone index: rag-documents
+2026-01-24 04:22:13 - rag_app - INFO - [main.py:1338] - ✓ Document RAG services initialized!
+2026-01-24 04:22:13 - rag_app - INFO - [main.py:1349] - Initializing Text-to-SQL service...
+2026-01-24 04:22:13 - rag_app - INFO - [main.py:1338] - ✓ Document RAG services initialized!
+2026-01-24 04:22:13 - rag_app - INFO - [main.py:1349] - Initializing Text-to-SQL service...
+2026-01-24 04:22:13 - rag_app - INFO - [main.py:1338] - ✓ Document RAG services initialized!
+2026-01-24 04:22:13 - rag_app - INFO - [main.py:1349] - Initializing Text-to-SQL service...
+2026-01-24 04:22:13 - rag_app.sql_service - INFO - [sql_service.py:68] - Configuring SQL LLM with deterministic settings: temperature=0.0, top_p=0.1, seed=42
+2026-01-24 04:22:13 - rag_app.sql_service - INFO - [sql_service.py:115] - Using Pinecone for SQL Agent memory (index: vanna-sql-training)
+2026-01-24 04:22:13 - rag_app.sql_service - INFO - [sql_service.py:135] - ✓ Vanna 2.0 Agent initialized successfully
+2026-01-24 04:22:13 - rag_app - INFO - [main.py:1351] - Training Vanna on database schema and examples...
+2026-01-24 04:22:13 - rag_app.sql_service - INFO - [sql_service.py:342] - Preparing schema context for Vanna 2.0...
+2026-01-24 04:22:13 - rag_app.sql_service - INFO - [sql_service.py:348] - ✓ Schema context prepared for Vanna 2.0 Agent!
+2026-01-24 04:22:13 - rag_app - INFO - [main.py:1353] - ✓ Text-to-SQL service initialized and trained!
+2026-01-24 04:22:13 - rag_app - INFO - [main.py:1364] - Initializing document cache service (S3/local)...
+2026-01-24 04:22:13 - rag_app.cache_service - INFO - [cache_service.py:54] - Using local storage (dir: data/cached_chunks)
+2026-01-24 04:22:13 - rag_app - INFO - [main.py:1366] - ✓ Document cache service initialized!
+2026-01-24 04:22:13 - rag_app - INFO - [main.py:1371] - ============================================================
+2026-01-24 04:22:13 - rag_app - INFO - [main.py:1372] - API is ready!
+2026-01-24 04:22:13 - rag_app - INFO - [main.py:1373] - ============================================================
+2026-01-24 04:22:13 - rag_app.sql_service - INFO - [sql_service.py:68] - Configuring SQL LLM with deterministic settings: temperature=0.0, top_p=0.1, seed=42
+2026-01-24 04:22:13 - rag_app.sql_service - INFO - [sql_service.py:68] - Configuring SQL LLM with deterministic settings: temperature=0.0, top_p=0.1, seed=42
+2026-01-24 04:22:13 - rag_app.sql_service - INFO - [sql_service.py:115] - Using Pinecone for SQL Agent memory (index: vanna-sql-training)
+2026-01-24 04:22:13 - rag_app.sql_service - INFO - [sql_service.py:135] - ✓ Vanna 2.0 Agent initialized successfully
+2026-01-24 04:22:13 - rag_app - INFO - [main.py:1351] - Training Vanna on database schema and examples...
+2026-01-24 04:22:13 - rag_app.sql_service - INFO - [sql_service.py:342] - Preparing schema context for Vanna 2.0...
+2026-01-24 04:22:13 - rag_app.sql_service - INFO - [sql_service.py:115] - Using Pinecone for SQL Agent memory (index: vanna-sql-training)
+2026-01-24 04:22:13 - rag_app.sql_service - INFO - [sql_service.py:348] - ✓ Schema context prepared for Vanna 2.0 Agent!
+2026-01-24 04:22:13 - rag_app - INFO - [main.py:1353] - ✓ Text-to-SQL service initialized and trained!
+2026-01-24 04:22:13 - rag_app.sql_service - INFO - [sql_service.py:135] - ✓ Vanna 2.0 Agent initialized successfully
+2026-01-24 04:22:13 - rag_app - INFO - [main.py:1364] - Initializing document cache service (S3/local)...
+2026-01-24 04:22:13 - rag_app - INFO - [main.py:1351] - Training Vanna on database schema and examples...
+2026-01-24 04:22:13 - rag_app.sql_service - INFO - [sql_service.py:342] - Preparing schema context for Vanna 2.0...
+2026-01-24 04:22:13 - rag_app.sql_service - INFO - [sql_service.py:348] - ✓ Schema context prepared for Vanna 2.0 Agent!
+2026-01-24 04:22:13 - rag_app.cache_service - INFO - [cache_service.py:54] - Using local storage (dir: data/cached_chunks)
+2026-01-24 04:22:13 - rag_app - INFO - [main.py:1353] - ✓ Text-to-SQL service initialized and trained!
+2026-01-24 04:22:13 - rag_app - INFO - [main.py:1364] - Initializing document cache service (S3/local)...
+2026-01-24 04:22:13 - rag_app - INFO - [main.py:1366] - ✓ Document cache service initialized!
+2026-01-24 04:22:13 - rag_app - INFO - [main.py:1371] - ============================================================
+2026-01-24 04:22:13 - rag_app - INFO - [main.py:1372] - API is ready!
+2026-01-24 04:22:13 - rag_app.cache_service - INFO - [cache_service.py:54] - Using local storage (dir: data/cached_chunks)
+2026-01-24 04:22:13 - rag_app - INFO - [main.py:1373] - ============================================================
+2026-01-24 04:22:13 - rag_app - INFO - [main.py:1366] - ✓ Document cache service initialized!
+2026-01-24 04:22:13 - rag_app - INFO - [main.py:1371] - ============================================================
+2026-01-24 04:22:13 - rag_app - INFO - [main.py:1372] - API is ready!
+2026-01-24 04:22:13 - rag_app - INFO - [main.py:1373] - ============================================================
+2026-01-24 04:23:00 - rag_app - INFO - [main.py:234] - Document ID computed: 1696a51452a82270e2753863a00c725ca9af45376a6d78c243730b345cc5f75a
+2026-01-24 04:23:00 - rag_app - INFO - [main.py:238] - Cache HIT for document: Asma-RAG_accessKeys.csv (ID: 1696a514...)
+2026-01-24 04:23:00 - rag_app.cache_service - INFO - [cache_service.py:212] - Loaded 1 chunks from cache for 1696a51452a82270e2753863a00c725ca9af45376a6d78c243730b345cc5f75a
+2026-01-24 04:23:00 - rag_app - INFO - [main.py:247] - Loaded 1 chunks from cache, skipping processing
+2026-01-24 04:23:00 - rag_app - INFO - [main.py:312] - Storing 1 vectors in Pinecone...
+2026-01-24 04:23:00 - rag_app.vector_service - INFO - [vector_service.py:128] - Successfully upserted 1 vectors to Pinecone
+2026-01-24 04:24:06 - rag_app.vector_service - INFO - [vector_service.py:63] - Connected to Pinecone index: rag-documents
+2026-01-24 04:25:20 - rag_app.sql_service - INFO - [sql_service.py:513] - SQL generation cache MISS - cached for 'give one experimental result...' (TTL: 86400s)
+2026-01-24 04:25:20 - rag_app.sql_service - INFO - [sql_service.py:232] - Executing SQL directly: SELECT c.segment, AVG(o.total_amount) as average_order_value FROM customers c JOIN orders o ON c.id ...
+2026-01-24 04:25:20 - rag_app.sql_service - INFO - [sql_service.py:255] - Resolved aws-0-us-west-2.pooler.supabase.com to IPv4: 35.160.209.8
+2026-01-24 04:25:21 - rag_app.sql_service - INFO - [sql_service.py:279] - ✓ SQL executed successfully: 3 rows returned
+2026-01-24 04:25:21 - rag_app.sql_service - INFO - [sql_service.py:615] - SQL result cache MISS - cached for 'SELECT c.segment, AVG(o.total_amount) as average_o...' (TTL: 900s)
+2026-01-24 22:43:51 - rag_app - INFO - [main.py:1388] - Shutting down Multi-Source RAG + Text-to-SQL API...
+2026-01-24 22:45:02 - rag_app - INFO - [main.py:1260] - Storage directories initialized: data\uploads, data\cached_chunks
+2026-01-24 22:45:02 - rag_app - INFO - [main.py:1262] - ============================================================
+2026-01-24 22:45:02 - rag_app - INFO - [main.py:1263] - Starting Multi-Source RAG + Text-to-SQL API...
+2026-01-24 22:45:02 - rag_app - INFO - [main.py:1264] - ============================================================
+2026-01-24 22:45:02 - rag_app - INFO - [main.py:1265] - Phase 0: Foundation Setup - COMPLETE
+2026-01-24 22:45:02 - rag_app - INFO - [main.py:1266] - Phase 1: Document RAG MVP - COMPLETE
+2026-01-24 22:45:02 - rag_app - INFO - [main.py:1267] - Phase 2: Text-to-SQL Foundation - COMPLETE
+2026-01-24 22:45:02 - rag_app - INFO - [main.py:1268] - Phase 3: Query Routing - COMPLETE
+2026-01-24 22:45:02 - rag_app - INFO - [main.py:1269] - Phase 4: Evaluation & Monitoring - COMPLETE
+2026-01-24 22:45:02 - rag_app - INFO - [main.py:1270] - Phase 5: Polish & Documentation - COMPLETE
+2026-01-24 22:45:02 - rag_app - INFO - [main.py:1271] - Phase 6: Docker Deployment - COMPLETE
+2026-01-24 22:45:02 - rag_app - INFO - [main.py:1272] - ============================================================
+2026-01-24 22:45:02 - rag_app - INFO - [main.py:1273] - ALL PHASES COMPLETE - PRODUCTION READY!
+2026-01-24 22:45:02 - rag_app - INFO - [main.py:1274] - ============================================================
+2026-01-24 22:45:02 - rag_app - INFO - [main.py:1280] - Initializing OPIK monitoring...
+2026-01-24 22:45:03 - rag_app - WARNING - [main.py:1307] - Failed to initialize OPIK: EOF when reading a line
+2026-01-24 22:45:03 - rag_app - INFO - [main.py:1314] - Initializing query cache service (Redis)...
+2026-01-24 22:45:04 - rag_app - INFO - [main.py:1320] - ✓ Query cache service initialized and connected!
+2026-01-24 22:45:04 - rag_app - INFO - [main.py:1321] -   Cache TTL: RAG=3600s, Embeddings=604800s, SQL Gen=86400s, SQL Results=900s
+2026-01-24 22:45:04 - rag_app - INFO - [main.py:1333] - Initializing Document RAG services...
+2026-01-24 22:45:05 - rag_app.vector_service - INFO - [vector_service.py:63] - Connected to Pinecone index: rag-documents
+2026-01-24 22:45:05 - rag_app - INFO - [main.py:1338] - ✓ Document RAG services initialized!
+2026-01-24 22:45:05 - rag_app - INFO - [main.py:1349] - Initializing Text-to-SQL service...
+2026-01-24 22:45:05 - rag_app.sql_service - INFO - [sql_service.py:68] - Configuring SQL LLM with deterministic settings: temperature=0.0, top_p=0.1, seed=42
+2026-01-24 22:45:05 - rag_app.sql_service - INFO - [sql_service.py:115] - Using Pinecone for SQL Agent memory (index: vanna-sql-training)
+2026-01-24 22:45:05 - rag_app.sql_service - INFO - [sql_service.py:135] - ✓ Vanna 2.0 Agent initialized successfully
+2026-01-24 22:45:05 - rag_app - INFO - [main.py:1351] - Training Vanna on database schema and examples...
+2026-01-24 22:45:05 - rag_app.sql_service - INFO - [sql_service.py:342] - Preparing schema context for Vanna 2.0...
+2026-01-24 22:45:05 - rag_app.sql_service - INFO - [sql_service.py:348] - ✓ Schema context prepared for Vanna 2.0 Agent!
+2026-01-24 22:45:05 - rag_app - INFO - [main.py:1353] - ✓ Text-to-SQL service initialized and trained!
+2026-01-24 22:45:05 - rag_app - INFO - [main.py:1364] - Initializing document cache service (S3/local)...
+2026-01-24 22:45:05 - rag_app.cache_service - INFO - [cache_service.py:54] - Using local storage (dir: data/cached_chunks)
+2026-01-24 22:45:05 - rag_app - INFO - [main.py:1366] - ✓ Document cache service initialized!
+2026-01-24 22:45:05 - rag_app - INFO - [main.py:1371] - ============================================================
+2026-01-24 22:45:05 - rag_app - INFO - [main.py:1372] - API is ready!
+2026-01-24 22:45:05 - rag_app - INFO - [main.py:1373] - ============================================================
+2026-01-24 22:55:36 - rag_app - INFO - [main.py:1388] - Shutting down Multi-Source RAG + Text-to-SQL API...
+2026-01-24 22:55:36 - rag_app - INFO - [main.py:1388] - Shutting down Multi-Source RAG + Text-to-SQL API...
+2026-01-24 22:55:36 - rag_app - INFO - [main.py:1388] - Shutting down Multi-Source RAG + Text-to-SQL API...
+2026-01-24 22:56:01 - rag_app - INFO - [main.py:1260] - Storage directories initialized: data\uploads, data\cached_chunks
+2026-01-24 22:56:01 - rag_app - INFO - [main.py:1260] - Storage directories initialized: data\uploads, data\cached_chunks
+2026-01-24 22:56:01 - rag_app - INFO - [main.py:1262] - ============================================================
+2026-01-24 22:56:01 - rag_app - INFO - [main.py:1262] - ============================================================
+2026-01-24 22:56:01 - rag_app - INFO - [main.py:1263] - Starting Multi-Source RAG + Text-to-SQL API...
+2026-01-24 22:56:01 - rag_app - INFO - [main.py:1264] - ============================================================
+2026-01-24 22:56:01 - rag_app - INFO - [main.py:1265] - Phase 0: Foundation Setup - COMPLETE
+2026-01-24 22:56:01 - rag_app - INFO - [main.py:1264] - ============================================================
+2026-01-24 22:56:01 - rag_app - INFO - [main.py:1267] - Phase 2: Text-to-SQL Foundation - COMPLETE
+2026-01-24 22:56:01 - rag_app - INFO - [main.py:1268] - Phase 3: Query Routing - COMPLETE
+2026-01-24 22:56:01 - rag_app - INFO - [main.py:1269] - Phase 4: Evaluation & Monitoring - COMPLETE
+2026-01-24 22:56:01 - rag_app - INFO - [main.py:1270] - Phase 5: Polish & Documentation - COMPLETE
+2026-01-24 22:56:01 - rag_app - INFO - [main.py:1271] - Phase 6: Docker Deployment - COMPLETE
+2026-01-24 22:56:01 - rag_app - INFO - [main.py:1272] - ============================================================
+2026-01-24 22:56:01 - rag_app - INFO - [main.py:1273] - ALL PHASES COMPLETE - PRODUCTION READY!
+2026-01-24 22:56:01 - rag_app - INFO - [main.py:1274] - ============================================================
+2026-01-24 22:56:01 - rag_app - INFO - [main.py:1267] - Phase 2: Text-to-SQL Foundation - COMPLETE
+2026-01-24 22:56:01 - rag_app - WARNING - [main.py:1304] - OPIK available but API key not configured.
+2026-01-24 22:56:01 - rag_app - INFO - [main.py:1305] - Monitoring will use local tracking only.
+2026-01-24 22:56:01 - rag_app - INFO - [main.py:1268] - Phase 3: Query Routing - COMPLETE
+2026-01-24 22:56:01 - rag_app - INFO - [main.py:1314] - Initializing query cache service (Redis)...
+2026-01-24 22:56:01 - rag_app - INFO - [main.py:1324] - Query cache service initialized but disabled (credentials not configured).
+2026-01-24 22:56:01 - rag_app - INFO - [main.py:1269] - Phase 4: Evaluation & Monitoring - COMPLETE
+2026-01-24 22:56:01 - rag_app - INFO - [main.py:1325] - App will continue without query caching. Set UPSTASH_REDIS_URL and UPSTASH_REDIS_TOKEN to enable.
+2026-01-24 22:56:01 - rag_app - INFO - [main.py:1270] - Phase 5: Polish & Documentation - COMPLETE
+2026-01-24 22:56:01 - rag_app - WARNING - [main.py:1340] - OpenAI/Pinecone API keys not configured.
+2026-01-24 22:56:01 - rag_app - INFO - [main.py:1271] - Phase 6: Docker Deployment - COMPLETE
+2026-01-24 22:56:01 - rag_app - WARNING - [main.py:1341] - Document RAG features will be unavailable.
+2026-01-24 22:56:01 - rag_app - INFO - [main.py:1272] - ============================================================
+nks
+2026-01-24 22:56:01 - rag_app - INFO - [main.py:1273] - ALL PHASES COMPLETE - PRODUCTION READY!
+2026-01-24 22:56:01 - rag_app - WARNING - [main.py:1355] - DATABASE_URL not configured.
+2026-01-24 22:56:01 - rag_app - INFO - [main.py:1274] - ============================================================
+2026-01-24 22:56:01 - rag_app - WARNING - [main.py:1356] - Text-to-SQL features will be unavailable.
+
+2026-01-24 22:56:01 - rag_app - INFO - [main.py:1262] - ============================================================
+2026-01-24 22:56:01 - rag_app - INFO - [main.py:1305] - Monitoring will use local tracking only.
+2026-01-24 22:56:01 - rag_app - INFO - [main.py:1314] - Initializing query cache service (Redis)...
+2026-01-24 22:56:01 - rag_app - INFO - [main.py:1263] - Starting Multi-Source RAG + Text-to-SQL API...
+2026-01-24 22:56:01 - rag_app - INFO - [main.py:1364] - Initializing document cache service (S3/local)...
+2026-01-24 22:56:01 - rag_app - INFO - [main.py:1324] - Query cache service initialized but disabled (credentials not configured).
+2026-01-24 22:56:01 - rag_app - INFO - [main.py:1325] - App will continue without query caching. Set UPSTASH_REDIS_URL and UPSTASH_REDIS_TOKEN to enable.
+2026-01-24 22:56:01 - rag_app - INFO - [main.py:1264] - ============================================================
+2026-01-24 22:56:01 - rag_app.cache_service - INFO - [cache_service.py:54] - Using local storage (dir: data/cached_chunks)
+2026-01-24 22:56:01 - rag_app - INFO - [main.py:1265] - Phase 0: Foundation Setup - COMPLETE
+2026-01-24 22:56:01 - rag_app - WARNING - [main.py:1340] - OpenAI/Pinecone API keys not configured.
+2026-01-24 22:56:01 - rag_app - INFO - [main.py:1366] - ✓ Document cache service initialized!
+2026-01-24 22:56:01 - rag_app - INFO - [main.py:1266] - Phase 1: Document RAG MVP - COMPLETE
+2026-01-24 22:56:01 - rag_app - INFO - [main.py:1267] - Phase 2: Text-to-SQL Foundation - COMPLETE
+2026-01-24 22:56:01 - rag_app - WARNING - [main.py:1341] - Document RAG features will be unavailable.
+2026-01-24 22:56:01 - rag_app - INFO - [main.py:1371] - ============================================================
+2026-01-24 22:56:01 - rag_app - INFO - [main.py:1268] - Phase 3: Query Routing - COMPLETE
+2026-01-24 22:56:01 - rag_app - WARNING - [main.py:1355] - DATABASE_URL not configured.
+2026-01-24 22:56:01 - rag_app - INFO - [main.py:1269] - Phase 4: Evaluation & Monitoring - COMPLETE
+2026-01-24 22:56:01 - rag_app - WARNING - [main.py:1356] - Text-to-SQL features will be unavailable.
+2026-01-24 22:56:01 - rag_app - INFO - [main.py:1270] - Phase 5: Polish & Documentation - COMPLETE
+2026-01-24 22:56:01 - rag_app - INFO - [main.py:1364] - Initializing document cache service (S3/local)...
+2026-01-24 22:56:01 - rag_app - INFO - [main.py:1271] - Phase 6: Docker Deployment - COMPLETE
+2026-01-24 22:56:01 - rag_app - INFO - [main.py:1272] - ============================================================
+2026-01-24 22:56:01 - rag_app.cache_service - INFO - [cache_service.py:54] - Using local storage (dir: data/cached_chunks)
+2026-01-24 22:56:01 - rag_app - INFO - [main.py:1273] - ALL PHASES COMPLETE - PRODUCTION READY!
+2026-01-24 22:56:01 - rag_app - INFO - [main.py:1366] - ✓ Document cache service initialized!
+2026-01-24 22:56:01 - rag_app - INFO - [main.py:1373] - ============================================================
+2026-01-24 22:56:01 - rag_app - INFO - [main.py:1274] - ============================================================
+2026-01-24 22:56:01 - rag_app - INFO - [main.py:1371] - ============================================================
+2026-01-24 22:56:01 - rag_app - WARNING - [main.py:1304] - OPIK available but API key not configured.
+2026-01-24 22:56:01 - rag_app - INFO - [main.py:1372] - API is ready!
+2026-01-24 22:56:01 - rag_app - INFO - [main.py:1305] - Monitoring will use local tracking only.
+2026-01-24 22:56:01 - rag_app - INFO - [main.py:1314] - Initializing query cache service (Redis)...
+2026-01-24 22:56:01 - rag_app - INFO - [main.py:1324] - Query cache service initialized but disabled (credentials not configured).
+2026-01-24 22:56:01 - rag_app - INFO - [main.py:1373] - ============================================================
+2026-01-24 22:56:01 - rag_app - INFO - [main.py:1325] - App will continue without query caching. Set UPSTASH_REDIS_URL and UPSTASH_REDIS_TOKEN to enable.
+2026-01-24 22:56:01 - rag_app - WARNING - [main.py:1340] - OpenAI/Pinecone API keys not configured.
+2026-01-24 22:56:01 - rag_app - WARNING - [main.py:1341] - Document RAG features will be unavailable.
+2026-01-24 22:56:01 - rag_app - INFO - [main.py:1388] - Shutting down Multi-Source RAG + Text-to-SQL API...
+2026-01-24 22:56:01 - rag_app - WARNING - [main.py:1356] - Text-to-SQL features will be unavailable.
+PI...
+2026-01-24 22:56:01 - rag_app - INFO - [main.py:1364] - Initializing document cache service (S3/local)...
+2026-01-24 22:56:01 - rag_app.cache_service - INFO - [cache_service.py:54] - Using local storage (dir: data/cached_chunks)
+2026-01-24 22:56:01 - rag_app - INFO - [main.py:1366] - ✓ Document cache service initialized!
+2026-01-24 22:56:01 - rag_app - INFO - [main.py:1371] - ============================================================
+2026-01-24 22:56:01 - rag_app - INFO - [main.py:1372] - API is ready!
+2026-01-24 22:56:01 - rag_app - INFO - [main.py:1373] - ============================================================
+2026-01-24 22:56:01 - rag_app - INFO - [main.py:1388] - Shutting down Multi-Source RAG + Text-to-SQL API...

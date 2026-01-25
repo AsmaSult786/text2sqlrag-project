@@ -1,0 +1,455 @@
+2026-01-24 02:58:41 - rag_app - ERROR - [main.py:1343] - Failed to initialize RAG services: Failed to connect to Pinecone index: (401)
+Reason: Unauthorized
+HTTP response headers: HTTPHeaderDict({'x-pinecone-api-version': '2025-10', 'x-cloud-trace-context': '637ef97b837e3357f30bf54454f39879', 'date': 'Sat, 24 Jan 2026 07:58:41 GMT', 'content-type': 'text/html', 'server': 'Google Frontend', 'Content-Length': '15', 'Via': '1.1 google', 'Alt-Svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000'})
+HTTP response body: Invalid API Key
+Traceback (most recent call last):
+  File "C:\Asma_2024\AI\LAB\text2sqlrag-project\app\services\vector_service.py", line 43, in connect_to_index
+    existing_indexes = self.pc.list_indexes()
+  File "C:\Asma_2024\AI\LAB\text2sqlrag-project\.venv\Lib\site-packages\pinecone\pinecone.py", line 787, in list_indexes
+    return self.db.index.list()
+           ~~~~~~~~~~~~~~~~~~^^
+  File "C:\Asma_2024\AI\LAB\text2sqlrag-project\.venv\Lib\site-packages\pinecone\utils\require_kwargs.py", line 26, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Asma_2024\AI\LAB\text2sqlrag-project\.venv\Lib\site-packages\pinecone\db_control\resources\sync\index.py", line 239, in list
+    response = self._index_api.list_indexes()
+  File "C:\Asma_2024\AI\LAB\text2sqlrag-project\.venv\Lib\site-packages\pinecone\openapi_support\endpoint.py", line 102, in __call__
+    return self.callable(self, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Asma_2024\AI\LAB\text2sqlrag-project\.venv\Lib\site-packages\pinecone\core\openapi\db_control\api\manage_indexes_api.py", line 1345, in __list_indexes
+    return cast(IndexList | ApplyResult[IndexList], self.call_with_http_info(**kwargs))
+                                                    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Asma_2024\AI\LAB\text2sqlrag-project\.venv\Lib\site-packages\pinecone\openapi_support\endpoint.py", line 134, in call_with_http_info
+    return self.api_client.call_api(
+           ~~~~~~~~~~~~~~~~~~~~~~~~^
+        self.settings["endpoint_path"],
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<16 lines>...
+        collection_formats=params["collection_format"],
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Asma_2024\AI\LAB\text2sqlrag-project\.venv\Lib\site-packages\pinecone\openapi_support\api_client.py", line 320, in call_api
+    return self.__call_api(
+           ~~~~~~~~~~~~~~~^
+        resource_path,
+        ^^^^^^^^^^^^^^
+    ...<14 lines>...
+        _check_type,
+        ^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Asma_2024\AI\LAB\text2sqlrag-project\.venv\Lib\site-packages\pinecone\openapi_support\api_client.py", line 185, in __call_api
+    raise e
+  File "C:\Asma_2024\AI\LAB\text2sqlrag-project\.venv\Lib\site-packages\pinecone\openapi_support\api_client.py", line 173, in __call_api
+    response_data = self.request(
+        method,
+    ...<6 lines>...
+        _request_timeout=_request_timeout,
+    )
+  File "C:\Asma_2024\AI\LAB\text2sqlrag-project\.venv\Lib\site-packages\pinecone\openapi_support\api_client.py", line 374, in request
+    return self.rest_client.GET(
+           ~~~~~~~~~~~~~~~~~~~~^
+        url,
+        ^^^^
+    ...<3 lines>...
+        headers=headers,
+        ^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Asma_2024\AI\LAB\text2sqlrag-project\.venv\Lib\site-packages\pinecone\openapi_support\rest_utils.py", line 75, in GET
+    return self.request(
+           ~~~~~~~~~~~~^
+        "GET",
+        ^^^^^^
+    ...<4 lines>...
+        query_params=query_params,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Asma_2024\AI\LAB\text2sqlrag-project\.venv\Lib\site-packages\pinecone\openapi_support\rest_urllib3.py", line 270, in request
+    return raise_exceptions_or_return(r)
+  File "C:\Asma_2024\AI\LAB\text2sqlrag-project\.venv\Lib\site-packages\pinecone\openapi_support\rest_utils.py", line 38, in raise_exceptions_or_return
+    raise UnauthorizedException(http_resp=r)
+pinecone.exceptions.exceptions.UnauthorizedException: (401)
+Reason: Unauthorized
+HTTP response headers: HTTPHeaderDict({'x-pinecone-api-version': '2025-10', 'x-cloud-trace-context': '637ef97b837e3357f30bf54454f39879', 'date': 'Sat, 24 Jan 2026 07:58:41 GMT', 'content-type': 'text/html', 'server': 'Google Frontend', 'Content-Length': '15', 'Via': '1.1 google', 'Alt-Svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000'})
+HTTP response body: Invalid API Key
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Asma_2024\AI\LAB\text2sqlrag-project\app\main.py", line 1336, in initialize_services
+    vector_service.connect_to_index()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Asma_2024\AI\LAB\text2sqlrag-project\app\services\vector_service.py", line 66, in connect_to_index
+    raise Exception(f"Failed to connect to Pinecone index: {str(e)}")
+Exception: Failed to connect to Pinecone index: (401)
+Reason: Unauthorized
+HTTP response headers: HTTPHeaderDict({'x-pinecone-api-version': '2025-10', 'x-cloud-trace-context': '637ef97b837e3357f30bf54454f39879', 'date': 'Sat, 24 Jan 2026 07:58:41 GMT', 'content-type': 'text/html', 'server': 'Google Frontend', 'Content-Length': '15', 'Via': '1.1 google', 'Alt-Svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000'})
+HTTP response body: Invalid API Key
+
+2026-01-24 02:58:41 - rag_app - ERROR - [main.py:1343] - Failed to initialize RAG services: Failed to connect to Pinecone index: (401)
+Reason: Unauthorized
+HTTP response headers: HTTPHeaderDict({'x-pinecone-api-version': '2025-10', 'x-cloud-trace-context': '126dc7f2c9c059a0398fb8d711dc2e03', 'date': 'Sat, 24 Jan 2026 07:58:41 GMT', 'content-type': 'text/html', 'server': 'Google Frontend', 'Content-Length': '15', 'Via': '1.1 google', 'Alt-Svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000'})
+HTTP response body: Invalid API Key
+Traceback (most recent call last):
+  File "C:\Asma_2024\AI\LAB\text2sqlrag-project\app\services\vector_service.py", line 43, in connect_to_index
+    existing_indexes = self.pc.list_indexes()
+  File "C:\Asma_2024\AI\LAB\text2sqlrag-project\.venv\Lib\site-packages\pinecone\pinecone.py", line 787, in list_indexes
+    return self.db.index.list()
+           ~~~~~~~~~~~~~~~~~~^^
+  File "C:\Asma_2024\AI\LAB\text2sqlrag-project\.venv\Lib\site-packages\pinecone\utils\require_kwargs.py", line 26, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Asma_2024\AI\LAB\text2sqlrag-project\.venv\Lib\site-packages\pinecone\db_control\resources\sync\index.py", line 239, in list
+    response = self._index_api.list_indexes()
+  File "C:\Asma_2024\AI\LAB\text2sqlrag-project\.venv\Lib\site-packages\pinecone\openapi_support\endpoint.py", line 102, in __call__
+    return self.callable(self, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Asma_2024\AI\LAB\text2sqlrag-project\.venv\Lib\site-packages\pinecone\core\openapi\db_control\api\manage_indexes_api.py", line 1345, in __list_indexes
+    return cast(IndexList | ApplyResult[IndexList], self.call_with_http_info(**kwargs))
+                                                    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Asma_2024\AI\LAB\text2sqlrag-project\.venv\Lib\site-packages\pinecone\openapi_support\endpoint.py", line 134, in call_with_http_info
+    return self.api_client.call_api(
+           ~~~~~~~~~~~~~~~~~~~~~~~~^
+        self.settings["endpoint_path"],
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<16 lines>...
+        collection_formats=params["collection_format"],
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Asma_2024\AI\LAB\text2sqlrag-project\.venv\Lib\site-packages\pinecone\openapi_support\api_client.py", line 320, in call_api
+    return self.__call_api(
+           ~~~~~~~~~~~~~~~^
+        resource_path,
+        ^^^^^^^^^^^^^^
+    ...<14 lines>...
+        _check_type,
+        ^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Asma_2024\AI\LAB\text2sqlrag-project\.venv\Lib\site-packages\pinecone\openapi_support\api_client.py", line 185, in __call_api
+    raise e
+  File "C:\Asma_2024\AI\LAB\text2sqlrag-project\.venv\Lib\site-packages\pinecone\openapi_support\api_client.py", line 173, in __call_api
+    response_data = self.request(
+        method,
+    ...<6 lines>...
+        _request_timeout=_request_timeout,
+    )
+  File "C:\Asma_2024\AI\LAB\text2sqlrag-project\.venv\Lib\site-packages\pinecone\openapi_support\api_client.py", line 374, in request
+    return self.rest_client.GET(
+           ~~~~~~~~~~~~~~~~~~~~^
+        url,
+        ^^^^
+    ...<3 lines>...
+        headers=headers,
+        ^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Asma_2024\AI\LAB\text2sqlrag-project\.venv\Lib\site-packages\pinecone\openapi_support\rest_utils.py", line 75, in GET
+    return self.request(
+           ~~~~~~~~~~~~^
+        "GET",
+        ^^^^^^
+    ...<4 lines>...
+        query_params=query_params,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Asma_2024\AI\LAB\text2sqlrag-project\.venv\Lib\site-packages\pinecone\openapi_support\rest_urllib3.py", line 270, in request
+    return raise_exceptions_or_return(r)
+  File "C:\Asma_2024\AI\LAB\text2sqlrag-project\.venv\Lib\site-packages\pinecone\openapi_support\rest_utils.py", line 38, in raise_exceptions_or_return
+    raise UnauthorizedException(http_resp=r)
+pinecone.exceptions.exceptions.UnauthorizedException: (401)
+Reason: Unauthorized
+HTTP response headers: HTTPHeaderDict({'x-pinecone-api-version': '2025-10', 'x-cloud-trace-context': '126dc7f2c9c059a0398fb8d711dc2e03', 'date': 'Sat, 24 Jan 2026 07:58:41 GMT', 'content-type': 'text/html', 'server': 'Google Frontend', 'Content-Length': '15', 'Via': '1.1 google', 'Alt-Svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000'})
+HTTP response body: Invalid API Key
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Asma_2024\AI\LAB\text2sqlrag-project\app\main.py", line 1336, in initialize_services
+    vector_service.connect_to_index()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Asma_2024\AI\LAB\text2sqlrag-project\app\services\vector_service.py", line 66, in connect_to_index
+    raise Exception(f"Failed to connect to Pinecone index: {str(e)}")
+Exception: Failed to connect to Pinecone index: (401)
+Reason: Unauthorized
+HTTP response headers: HTTPHeaderDict({'x-pinecone-api-version': '2025-10', 'x-cloud-trace-context': '126dc7f2c9c059a0398fb8d711dc2e03', 'date': 'Sat, 24 Jan 2026 07:58:41 GMT', 'content-type': 'text/html', 'server': 'Google Frontend', 'Content-Length': '15', 'Via': '1.1 google', 'Alt-Svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000'})
+HTTP response body: Invalid API Key
+
+2026-01-24 02:58:41 - rag_app - ERROR - [main.py:1343] - Failed to initialize RAG services: Failed to connect to Pinecone index: (401)
+Reason: Unauthorized
+HTTP response headers: HTTPHeaderDict({'x-pinecone-api-version': '2025-10', 'x-cloud-trace-context': '6c3771f06853e475cfc3904fc38c5d82', 'date': 'Sat, 24 Jan 2026 07:58:41 GMT', 'content-type': 'text/html', 'server': 'Google Frontend', 'Content-Length': '15', 'Via': '1.1 google', 'Alt-Svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000'})
+HTTP response body: Invalid API Key
+Traceback (most recent call last):
+  File "C:\Asma_2024\AI\LAB\text2sqlrag-project\app\services\vector_service.py", line 43, in connect_to_index
+    existing_indexes = self.pc.list_indexes()
+  File "C:\Asma_2024\AI\LAB\text2sqlrag-project\.venv\Lib\site-packages\pinecone\pinecone.py", line 787, in list_indexes
+    return self.db.index.list()
+           ~~~~~~~~~~~~~~~~~~^^
+  File "C:\Asma_2024\AI\LAB\text2sqlrag-project\.venv\Lib\site-packages\pinecone\utils\require_kwargs.py", line 26, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Asma_2024\AI\LAB\text2sqlrag-project\.venv\Lib\site-packages\pinecone\db_control\resources\sync\index.py", line 239, in list
+    response = self._index_api.list_indexes()
+  File "C:\Asma_2024\AI\LAB\text2sqlrag-project\.venv\Lib\site-packages\pinecone\openapi_support\endpoint.py", line 102, in __call__
+    return self.callable(self, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Asma_2024\AI\LAB\text2sqlrag-project\.venv\Lib\site-packages\pinecone\core\openapi\db_control\api\manage_indexes_api.py", line 1345, in __list_indexes
+    return cast(IndexList | ApplyResult[IndexList], self.call_with_http_info(**kwargs))
+                                                    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Asma_2024\AI\LAB\text2sqlrag-project\.venv\Lib\site-packages\pinecone\openapi_support\endpoint.py", line 134, in call_with_http_info
+    return self.api_client.call_api(
+           ~~~~~~~~~~~~~~~~~~~~~~~~^
+        self.settings["endpoint_path"],
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<16 lines>...
+        collection_formats=params["collection_format"],
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Asma_2024\AI\LAB\text2sqlrag-project\.venv\Lib\site-packages\pinecone\openapi_support\api_client.py", line 320, in call_api
+    return self.__call_api(
+           ~~~~~~~~~~~~~~~^
+        resource_path,
+        ^^^^^^^^^^^^^^
+    ...<14 lines>...
+        _check_type,
+        ^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Asma_2024\AI\LAB\text2sqlrag-project\.venv\Lib\site-packages\pinecone\openapi_support\api_client.py", line 185, in __call_api
+    raise e
+  File "C:\Asma_2024\AI\LAB\text2sqlrag-project\.venv\Lib\site-packages\pinecone\openapi_support\api_client.py", line 173, in __call_api
+    response_data = self.request(
+        method,
+    ...<6 lines>...
+        _request_timeout=_request_timeout,
+    )
+  File "C:\Asma_2024\AI\LAB\text2sqlrag-project\.venv\Lib\site-packages\pinecone\openapi_support\api_client.py", line 374, in request
+    return self.rest_client.GET(
+           ~~~~~~~~~~~~~~~~~~~~^
+        url,
+        ^^^^
+    ...<3 lines>...
+        headers=headers,
+        ^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Asma_2024\AI\LAB\text2sqlrag-project\.venv\Lib\site-packages\pinecone\openapi_support\rest_utils.py", line 75, in GET
+    return self.request(
+           ~~~~~~~~~~~~^
+        "GET",
+        ^^^^^^
+    ...<4 lines>...
+        query_params=query_params,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Asma_2024\AI\LAB\text2sqlrag-project\.venv\Lib\site-packages\pinecone\openapi_support\rest_urllib3.py", line 270, in request
+    return raise_exceptions_or_return(r)
+  File "C:\Asma_2024\AI\LAB\text2sqlrag-project\.venv\Lib\site-packages\pinecone\openapi_support\rest_utils.py", line 38, in raise_exceptions_or_return
+    raise UnauthorizedException(http_resp=r)
+pinecone.exceptions.exceptions.UnauthorizedException: (401)
+Reason: Unauthorized
+HTTP response headers: HTTPHeaderDict({'x-pinecone-api-version': '2025-10', 'x-cloud-trace-context': '6c3771f06853e475cfc3904fc38c5d82', 'date': 'Sat, 24 Jan 2026 07:58:41 GMT', 'content-type': 'text/html', 'server': 'Google Frontend', 'Content-Length': '15', 'Via': '1.1 google', 'Alt-Svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000'})
+HTTP response body: Invalid API Key
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Asma_2024\AI\LAB\text2sqlrag-project\app\main.py", line 1336, in initialize_services
+    vector_service.connect_to_index()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Asma_2024\AI\LAB\text2sqlrag-project\app\services\vector_service.py", line 66, in connect_to_index
+    raise Exception(f"Failed to connect to Pinecone index: {str(e)}")
+Exception: Failed to connect to Pinecone index: (401)
+Reason: Unauthorized
+HTTP response headers: HTTPHeaderDict({'x-pinecone-api-version': '2025-10', 'x-cloud-trace-context': '6c3771f06853e475cfc3904fc38c5d82', 'date': 'Sat, 24 Jan 2026 07:58:41 GMT', 'content-type': 'text/html', 'server': 'Google Frontend', 'Content-Length': '15', 'Via': '1.1 google', 'Alt-Svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000'})
+HTTP response body: Invalid API Key
+
+2026-01-24 03:08:09 - rag_app - ERROR - [main.py:1343] - Failed to initialize RAG services: Failed to connect to Pinecone index: (401)
+Reason: Unauthorized
+HTTP response headers: HTTPHeaderDict({'x-pinecone-api-version': '2025-10', 'x-cloud-trace-context': '12447b87405a0a2505bd381b1eb52a2f', 'date': 'Sat, 24 Jan 2026 08:08:09 GMT', 'content-type': 'text/html', 'server': 'Google Frontend', 'Content-Length': '15', 'Via': '1.1 google', 'Alt-Svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000'})
+HTTP response body: Invalid API Key
+Traceback (most recent call last):
+  File "C:\Asma_2024\AI\LAB\text2sqlrag-project\app\services\vector_service.py", line 43, in connect_to_index
+    existing_indexes = self.pc.list_indexes()
+  File "C:\Asma_2024\AI\LAB\text2sqlrag-project\.venv\Lib\site-packages\pinecone\pinecone.py", line 787, in list_indexes
+    return self.db.index.list()
+           ~~~~~~~~~~~~~~~~~~^^
+  File "C:\Asma_2024\AI\LAB\text2sqlrag-project\.venv\Lib\site-packages\pinecone\utils\require_kwargs.py", line 26, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Asma_2024\AI\LAB\text2sqlrag-project\.venv\Lib\site-packages\pinecone\db_control\resources\sync\index.py", line 239, in list
+    response = self._index_api.list_indexes()
+  File "C:\Asma_2024\AI\LAB\text2sqlrag-project\.venv\Lib\site-packages\pinecone\openapi_support\endpoint.py", line 102, in __call__
+    return self.callable(self, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Asma_2024\AI\LAB\text2sqlrag-project\.venv\Lib\site-packages\pinecone\core\openapi\db_control\api\manage_indexes_api.py", line 1345, in __list_indexes
+    return cast(IndexList | ApplyResult[IndexList], self.call_with_http_info(**kwargs))
+                                                    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Asma_2024\AI\LAB\text2sqlrag-project\.venv\Lib\site-packages\pinecone\openapi_support\endpoint.py", line 134, in call_with_http_info
+    return self.api_client.call_api(
+           ~~~~~~~~~~~~~~~~~~~~~~~~^
+        self.settings["endpoint_path"],
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<16 lines>...
+        collection_formats=params["collection_format"],
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Asma_2024\AI\LAB\text2sqlrag-project\.venv\Lib\site-packages\pinecone\openapi_support\api_client.py", line 320, in call_api
+    return self.__call_api(
+           ~~~~~~~~~~~~~~~^
+        resource_path,
+        ^^^^^^^^^^^^^^
+    ...<14 lines>...
+        _check_type,
+        ^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Asma_2024\AI\LAB\text2sqlrag-project\.venv\Lib\site-packages\pinecone\openapi_support\api_client.py", line 185, in __call_api
+    raise e
+  File "C:\Asma_2024\AI\LAB\text2sqlrag-project\.venv\Lib\site-packages\pinecone\openapi_support\api_client.py", line 173, in __call_api
+    response_data = self.request(
+        method,
+    ...<6 lines>...
+        _request_timeout=_request_timeout,
+    )
+  File "C:\Asma_2024\AI\LAB\text2sqlrag-project\.venv\Lib\site-packages\pinecone\openapi_support\api_client.py", line 374, in request
+    return self.rest_client.GET(
+           ~~~~~~~~~~~~~~~~~~~~^
+        url,
+        ^^^^
+    ...<3 lines>...
+        headers=headers,
+        ^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Asma_2024\AI\LAB\text2sqlrag-project\.venv\Lib\site-packages\pinecone\openapi_support\rest_utils.py", line 75, in GET
+    return self.request(
+           ~~~~~~~~~~~~^
+        "GET",
+        ^^^^^^
+    ...<4 lines>...
+        query_params=query_params,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Asma_2024\AI\LAB\text2sqlrag-project\.venv\Lib\site-packages\pinecone\openapi_support\rest_urllib3.py", line 270, in request
+    return raise_exceptions_or_return(r)
+  File "C:\Asma_2024\AI\LAB\text2sqlrag-project\.venv\Lib\site-packages\pinecone\openapi_support\rest_utils.py", line 38, in raise_exceptions_or_return
+    raise UnauthorizedException(http_resp=r)
+pinecone.exceptions.exceptions.UnauthorizedException: (401)
+Reason: Unauthorized
+HTTP response headers: HTTPHeaderDict({'x-pinecone-api-version': '2025-10', 'x-cloud-trace-context': '12447b87405a0a2505bd381b1eb52a2f', 'date': 'Sat, 24 Jan 2026 08:08:09 GMT', 'content-type': 'text/html', 'server': 'Google Frontend', 'Content-Length': '15', 'Via': '1.1 google', 'Alt-Svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000'})
+HTTP response body: Invalid API Key
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Asma_2024\AI\LAB\text2sqlrag-project\app\main.py", line 1336, in initialize_services
+    vector_service.connect_to_index()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Asma_2024\AI\LAB\text2sqlrag-project\app\services\vector_service.py", line 66, in connect_to_index
+    raise Exception(f"Failed to connect to Pinecone index: {str(e)}")
+Exception: Failed to connect to Pinecone index: (401)
+Reason: Unauthorized
+HTTP response headers: HTTPHeaderDict({'x-pinecone-api-version': '2025-10', 'x-cloud-trace-context': '12447b87405a0a2505bd381b1eb52a2f', 'date': 'Sat, 24 Jan 2026 08:08:09 GMT', 'content-type': 'text/html', 'server': 'Google Frontend', 'Content-Length': '15', 'Via': '1.1 google', 'Alt-Svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000'})
+HTTP response body: Invalid API Key
+
+2026-01-24 03:08:09 - rag_app - ERROR - [main.py:1343] - Failed to initialize RAG services: Failed to connect to Pinecone index: (401)
+Reason: Unauthorized
+HTTP response headers: HTTPHeaderDict({'x-pinecone-api-version': '2025-10', 'x-cloud-trace-context': 'f09ae81db58a47a8785a6371ef29530f', 'date': 'Sat, 24 Jan 2026 08:08:09 GMT', 'content-type': 'text/html', 'server': 'Google Frontend', 'Content-Length': '15', 'Via': '1.1 google', 'Alt-Svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000'})
+HTTP response body: Invalid API Key
+Traceback (most recent call last):
+  File "C:\Asma_2024\AI\LAB\text2sqlrag-project\app\services\vector_service.py", line 43, in connect_to_index
+    existing_indexes = self.pc.list_indexes()
+  File "C:\Asma_2024\AI\LAB\text2sqlrag-project\.venv\Lib\site-packages\pinecone\pinecone.py", line 787, in list_indexes
+    return self.db.index.list()
+           ~~~~~~~~~~~~~~~~~~^^
+  File "C:\Asma_2024\AI\LAB\text2sqlrag-project\.venv\Lib\site-packages\pinecone\utils\require_kwargs.py", line 26, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Asma_2024\AI\LAB\text2sqlrag-project\.venv\Lib\site-packages\pinecone\db_control\resources\sync\index.py", line 239, in list
+    response = self._index_api.list_indexes()
+  File "C:\Asma_2024\AI\LAB\text2sqlrag-project\.venv\Lib\site-packages\pinecone\openapi_support\endpoint.py", line 102, in __call__
+    return self.callable(self, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Asma_2024\AI\LAB\text2sqlrag-project\.venv\Lib\site-packages\pinecone\core\openapi\db_control\api\manage_indexes_api.py", line 1345, in __list_indexes
+    return cast(IndexList | ApplyResult[IndexList], self.call_with_http_info(**kwargs))
+                                                    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Asma_2024\AI\LAB\text2sqlrag-project\.venv\Lib\site-packages\pinecone\openapi_support\endpoint.py", line 134, in call_with_http_info
+    return self.api_client.call_api(
+           ~~~~~~~~~~~~~~~~~~~~~~~~^
+        self.settings["endpoint_path"],
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<16 lines>...
+        collection_formats=params["collection_format"],
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Asma_2024\AI\LAB\text2sqlrag-project\.venv\Lib\site-packages\pinecone\openapi_support\api_client.py", line 320, in call_api
+    return self.__call_api(
+           ~~~~~~~~~~~~~~~^
+        resource_path,
+        ^^^^^^^^^^^^^^
+    ...<14 lines>...
+        _check_type,
+        ^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Asma_2024\AI\LAB\text2sqlrag-project\.venv\Lib\site-packages\pinecone\openapi_support\api_client.py", line 185, in __call_api
+    raise e
+  File "C:\Asma_2024\AI\LAB\text2sqlrag-project\.venv\Lib\site-packages\pinecone\openapi_support\api_client.py", line 173, in __call_api
+    response_data = self.request(
+        method,
+    ...<6 lines>...
+        _request_timeout=_request_timeout,
+    )
+  File "C:\Asma_2024\AI\LAB\text2sqlrag-project\.venv\Lib\site-packages\pinecone\openapi_support\api_client.py", line 374, in request
+    return self.rest_client.GET(
+           ~~~~~~~~~~~~~~~~~~~~^
+        url,
+        ^^^^
+    ...<3 lines>...
+        headers=headers,
+        ^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Asma_2024\AI\LAB\text2sqlrag-project\.venv\Lib\site-packages\pinecone\openapi_support\rest_utils.py", line 75, in GET
+    return self.request(
+           ~~~~~~~~~~~~^
+        "GET",
+        ^^^^^^
+    ...<4 lines>...
+        query_params=query_params,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Asma_2024\AI\LAB\text2sqlrag-project\.venv\Lib\site-packages\pinecone\openapi_support\rest_urllib3.py", line 270, in request
+    return raise_exceptions_or_return(r)
+  File "C:\Asma_2024\AI\LAB\text2sqlrag-project\.venv\Lib\site-packages\pinecone\openapi_support\rest_utils.py", line 38, in raise_exceptions_or_return
+    raise UnauthorizedException(http_resp=r)
+pinecone.exceptions.exceptions.UnauthorizedException: (401)
+Reason: Unauthorized
+HTTP response headers: HTTPHeaderDict({'x-pinecone-api-version': '2025-10', 'x-cloud-trace-context': 'f09ae81db58a47a8785a6371ef29530f', 'date': 'Sat, 24 Jan 2026 08:08:09 GMT', 'content-type': 'text/html', 'server': 'Google Frontend', 'Content-Length': '15', 'Via': '1.1 google', 'Alt-Svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000'})
+HTTP response body: Invalid API Key
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Asma_2024\AI\LAB\text2sqlrag-project\app\main.py", line 1336, in initialize_services
+    vector_service.connect_to_index()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Asma_2024\AI\LAB\text2sqlrag-project\app\services\vector_service.py", line 66, in connect_to_index
+    raise Exception(f"Failed to connect to Pinecone index: {str(e)}")
+Exception: Failed to connect to Pinecone index: (401)
+Reason: Unauthorized
+HTTP response headers: HTTPHeaderDict({'x-pinecone-api-version': '2025-10', 'x-cloud-trace-context': 'f09ae81db58a47a8785a6371ef29530f', 'date': 'Sat, 24 Jan 2026 08:08:09 GMT', 'content-type': 'text/html', 'server': 'Google Frontend', 'Content-Length': '15', 'Via': '1.1 google', 'Alt-Svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000'})
+HTTP response body: Invalid API Key
+
